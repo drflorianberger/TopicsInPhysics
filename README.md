@@ -1,2 +1,2 @@
-# TopicsInPhysics
-Corse for UCU
+# Topics In Physics
+Course for UCU
