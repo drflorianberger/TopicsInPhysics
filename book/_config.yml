@@ -1,0 +1,8 @@
+# Book settings
+title: Physics of Fluctuations
+author: Florian Berger
+logo: logo.png
+
+latex:
+  latex_documents:
+    targetname: book.tex

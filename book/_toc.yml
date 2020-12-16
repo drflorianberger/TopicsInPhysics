@@ -1,0 +1,12 @@
+- file: intro
+- file: content
+  sections:
+    - file: markdown
+    - file: notebooks
+- file: week1/week1
+  sections:
+    - file: week1/lecture1
+- file: week2/week2
+  sections:
+    - file: week2/lecture2
+
