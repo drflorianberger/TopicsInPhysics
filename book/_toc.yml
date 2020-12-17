@@ -8,5 +8,6 @@
     - file: week1/lecture1
 - file: week2/week2
   sections:
-    - file: week2/lecture2
+    - file: week2/separate_charges
+    - file: week2/current
 

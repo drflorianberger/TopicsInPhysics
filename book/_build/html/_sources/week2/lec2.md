@@ -3,9 +3,6 @@
 ```{admonition} You will learn
 How ion channels can seperate charges betweeen compartments
 ```
-
-
-
 ## Separating charges is fundamental for neural communication
 Cells seperate ions between compartments to store energy and information. These compartments are seperated by membranes with a protein machinery of pumps and channels. These pumps and channels regulate the trans-membrane ion flow, keep charge imbalances from equilibrating and thus generate and maintaine a voltage potential across the membrane. This membrane potential can be altered by chemical, electrical, or mechanical stimulation and the resulting disturbance can progagate along the cell membrane as action potentials. Action potentials are fundamental for neural communcation and travel at a rate of $10-100\, \rm{m/s}$.
 
@@ -106,42 +103,7 @@ in which RT is the universal gas constant times the temperature, z is the valenc
 
 
 
+## Additional Stuff
 
 
-## Key Concepts
-```{admonition} Now, you should know
-How an elctrical potential can be generated between compartments and why ion channels must be specifc and cannot be just wholes in the seperating membrane.
-```
-
-## Additional material
-
-#Open jupyter notebook from command line, go to cell tools and edit meta tag to hide input!
-from IPython.display import YouTubeVideo
-YouTubeVideo('Ba02v7eoVWQ')
-
-# Terms and concepts used in the paper
-
-- Membrane with channels
-
-In biology, different compartments are separated by membranes. Different ionic solutions in these compartments result in different potentials (voltages) between these compartments. Proteins in the membrane can regulate the flow of ions, either by pumping or open pores for specific ions.  Channels are proteins in a membrane that allow ions to traverse through their pores. Channels can be gated with different mechanisms, here we consider voltage-gated ion channels. The current through a single channel when its open is called the single-channel current.  
-- Electrophysiology
-
-Experimental techniques to measure currents and voltages in cells and tissue.
-
-- Channel conductance
-- Dwelling times
-- Open probability
-- ensemble average / time average
-- depolarization
-
-
-
-membrane potential:
-https://www.physiologyweb.com/lecture_notes/resting_membrane_potential/resting_membrane_potential_membrane_ionic_current_equations.html
-
-# Notation in the paper
-
-- $i$ single channel current
-- $N$ number of channels 
-- $P_0$ open probability
-- $\gamma$ single channel conductance
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ba02v7eoVWQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
