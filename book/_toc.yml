@@ -10,4 +10,8 @@
   sections:
     - file: week2/separate_charges
     - file: week2/current
+    - file: week2/stoc
+    - file: week2/gating
+    - file: week2/fluct
+- file: week2/ex_wk2
 

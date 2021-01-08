@@ -28,4 +28,18 @@ $$
 I = G(V - V_{\rm{rest}})
 $$
 
-DRAWING
+```{figure} current.png
+---
+height: 150px
+name: sc1
+---
+```
+## Measuring currents
+By using the patch clamp tecnique, we can measure the membrane potential $V$: A glass pipette filled with the intracellular ion solution accesses the interior of the cell. Now the potential between the interior of the pipette and the bath can be measured and controlled, which is the membrane potential.
+
+```{figure} amp.png
+---
+height: 150px
+name: sc1
+---
+```

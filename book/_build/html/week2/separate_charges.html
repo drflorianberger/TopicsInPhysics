@@ -27,7 +27,7 @@
     <script src="../_static/sphinx-book-theme.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"koc": "k_{\\rm{oc}}", "kco": "k_{\\rm{co}}", "Po": "P_{\\rm{o}}", "Pc": "P_{\\rm{c}}", "mean": ["\\langle #1 \\rangle", 1]}}, "tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -104,7 +104,27 @@
      The Current Through Ion Channels
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stoc.html">
+     Stochastic Dynamics of Ion Channels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gating.html">
+     Gating of Ion Channels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fluct.html">
+     Fluctuation analysis
+    </a>
+   </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ex_wk2.html">
+   Week 2, exercises: Fluctuation of Ion Channels
+  </a>
  </li>
 </ul>
 
@@ -285,13 +305,13 @@
 \[
 V_{\rm{eq}} = \frac{RT}{z F}\log\frac{[C]_{\rm{out}}}{[C]_{\rm{in}}},
 \]</div>
-<p>in which RT is the universal gas constant times the temperature, z is the valence of the ionic species, F is Faraday’s constant, and <span class="math notranslate nohighlight">\([C]_{\rm{out}}\)</span>, <span class="math notranslate nohighlight">\([C]_{\rm{in}}\)</span> are the concentration of the ion outside and inside, respectevely.</p>
+<p>in which RT is the universal gas constant times the temperature, z is the valence of the ionic species, F is Faraday’s constant, and <span class="math notranslate nohighlight">\([C]_{\rm{out}}\)</span>, <span class="math notranslate nohighlight">\([C]_{\rm{in}}\)</span> are the concentration of the ion outside and inside, respectively.</p>
 </div>
 <div class="section" id="key-concepts">
 <h2>Key Concepts<a class="headerlink" href="#key-concepts" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-now-you-should-know admonition">
 <p class="admonition-title">Now, you should know</p>
-<p>How an elctrical potential can be generated between compartments and why ion channels must be specifc and cannot be just wholes in the seperating membrane.</p>
+<p>How an elctrical potential can be generated between compartments and why ion channels must be specifc and cannot be just holes in the seperating membrane.</p>
 </div>
 </div>
 <div class="section" id="additional-material">

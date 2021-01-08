@@ -6,3 +6,15 @@ logo: logo.png
 latex:
   latex_documents:
     targetname: book.tex
+
+sphinx:
+  config:
+    mathjax_config:
+      TeX:
+        Macros:
+          "koc": "k_{\\rm{oc}}"
+          "kco": "k_{\\rm{co}}"
+          "Po": "P_{\\rm{o}}"
+          "Pc": "P_{\\rm{c}}"
+          "mean": ["\\langle #1 \\rangle",1]
+         

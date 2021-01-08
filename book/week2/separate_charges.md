@@ -100,12 +100,12 @@ $$
 V_{\rm{eq}} = \frac{RT}{z F}\log\frac{[C]_{\rm{out}}}{[C]_{\rm{in}}},
 $$
 
-in which RT is the universal gas constant times the temperature, z is the valence of the ionic species, F is Faraday's constant, and $[C]_{\rm{out}}$, $[C]_{\rm{in}}$ are the concentration of the ion outside and inside, respectevely. 
+in which RT is the universal gas constant times the temperature, z is the valence of the ionic species, F is Faraday's constant, and $[C]_{\rm{out}}$, $[C]_{\rm{in}}$ are the concentration of the ion outside and inside, respectively. 
 
 
 ## Key Concepts
 ```{admonition} Now, you should know
-How an elctrical potential can be generated between compartments and why ion channels must be specifc and cannot be just wholes in the seperating membrane.
+How an elctrical potential can be generated between compartments and why ion channels must be specifc and cannot be just holes in the seperating membrane.
 ```
 
 
