@@ -4,10 +4,10 @@
 How to use fluctuation analysis on the macroscopic current to deduce molecular characteristics of ion channels.
 ```
 
-Let's consider a single ion channel. The current through a single channel, when it is open can be expressed as
+Let's consider a single ion channel. The current through a single channe, which is open is
 
 $$
-i_{\rm{o}} = \gamma (V-V_{\rm{rest}}). 
+i_{\rm{o}}.
 $$
 
 Obviously, there is no current when the channel is closed
@@ -31,7 +31,7 @@ $$
 Let's consider a cell or a cluster with $N$ channels. Because the mean and the variance are additive, we derive
 
 $$
-I = N \mean{i} = N i_{\rm{o}} \Po(V,t) = N \Po(V,t) \gamma (V-V_{\rm{rest}}) 
+I = N \mean{i} = N i_{\rm{o}} \Po 
 $$
 
 $$

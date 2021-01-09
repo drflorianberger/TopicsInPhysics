@@ -19,7 +19,7 @@ Now, we can write down the Master equation for the time evolution of the probabi
 $$
 \frac{d}{dt} \Po = - \koc \Po + \kco \Pc \\
 \frac{d}{dt} \Pc = - \kco \Pc + \koc \Po \\
-$$
+$$ (eq:2state)
 
 With the normalization requirement $\Po + \Pc = 1$, we can solve this equations, see EXERSICES.
 

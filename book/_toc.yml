@@ -13,5 +13,7 @@
     - file: week2/stoc
     - file: week2/gating
     - file: week2/fluct
+    - file: week2/fluctVG
+    - file: week2/open
 - file: week2/ex_wk2
 
