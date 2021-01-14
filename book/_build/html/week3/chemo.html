@@ -1,0 +1,355 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Chemomechanical Cycle &#8212; Physics of Fluctuations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"koc": "k_{\\rm{oc}}", "kco": "k_{\\rm{co}}", "Po": "P_{\\rm{o}}", "Pc": "P_{\\rm{c}}", "mean": ["\\langle #1 \\rangle", 1]}}, "tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Optical traps and kinesin’s randomness" href="trap.html" />
+    <link rel="prev" title="Randomness" href="randomness.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Physics of Fluctuations</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content.html">
+   Content in Jupyter Book
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week1/week1.html">
+   Week 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week2/week2.html">
+   Week 2: Fluctuation of Ion Channels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week2/ex_wk2.html">
+   Week 2: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="week3.html">
+   Week 3: Fluctuation of Molecular Motors
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="molecularmotors.html">
+     Molecular Motors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stepper.html">
+     Stochastic Stepper
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="randomness.html">
+     Randomness
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Chemomechanical Cycle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="trap.html">
+     Optical traps and kinesin’s randomness
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="open.html">
+     Open Question
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ex_wk3.html">
+   Week 3: Exercises
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/week3/chemo.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="chemomechanical-cycle">
+<h1>Chemomechanical Cycle<a class="headerlink" href="#chemomechanical-cycle" title="Permalink to this headline">¶</a></h1>
+<div class="admonition-you-will-learn admonition">
+<p class="admonition-title">You will learn</p>
+<p>the concept of chemomechanical cycles.</p>
+</div>
+<p>Next, we consider a more accurate descriptions of a molecular motor. A motor uses the free energy from the hydrolysis of ATP</p>
+<div class="math notranslate nohighlight">
+\[
+ATP \rightarrow P_i + ADP
+\]</div>
+<p>to perform a step. The chemical cycle involves the binding of ATP to an empty motor head, the release of <span class="math notranslate nohighlight">\(P_i\)</span>, and the release of <span class="math notranslate nohighlight">\(ADP\)</span>. The mechanical cycle consists of a sequence of conformational changes, which result in a step.</p>
+<div class="figure align-default" id="chem">
+<a class="reference internal image-reference" href="../_images/chem.png"><img alt="../_images/chem.png" src="../_images/chem.png" style="height: 170px;" /></a>
+</div>
+<p>It is possible to calculate the waiting time distribution and other quantities such as the thermodynamical efficiency for these chemomechanical cycles. However the real chllange is to connect them to experimental data.</p>
+<p>In the following, we consider a very simple cycle with one state.</p>
+<div class="figure align-default" id="schem">
+<a class="reference internal image-reference" href="../_images/schem.png"><img alt="../_images/schem.png" src="../_images/schem.png" style="height: 170px;" /></a>
+</div>
+<p>Next, we want determine the randomness of such a motor.</p>
+<p>By renaming the states we can use our result from the poisson stepper</p>
+<div class="figure align-default" id="rnstates">
+<a class="reference internal image-reference" href="../_images/rnstates.png"><img alt="../_images/rnstates.png" src="../_images/rnstates.png" style="height: 170px;" /></a>
+</div>
+<div class="math notranslate nohighlight">
+\[
+A_n \approx P_{2n},
+\]</div>
+<p>here we cannot use an equal sign, because the normalization is not correct. We can calculate ther nurmalization by</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_{n=0}^{\infty} P_{2n} = \cosh(k t) e^{-k t}.
+\]</div>
+<p>The normalized solution is then</p>
+<div class="math notranslate nohighlight">
+\[
+A_n = \frac{P_{2 n}}{\cosh(k t) e^{-k t}} = \frac{(k t)^{2j}}{(2j)!\cosh(k t)}
+\]</div>
+<p>Let’s determine the randomness!</p>
+<div class="math notranslate nohighlight">
+\[
+x(t) = d n(t)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\mean{x} = d \sum_n n A_n = \frac{d}{2} k t \tanh(kt)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\mean{x^2} = d^2 \sum_n n^2 A_n = \frac{d^2}{4} kt (k t + \tanh(kt)),
+\]</div>
+<p>with <span class="math notranslate nohighlight">\(\tanh(x) = \frac{e^{2x}-1}{e^{2x} + 1}\)</span>. Let’s consider solutions for <span class="math notranslate nohighlight">\(kt \gg 1\)</span>, then <span class="math notranslate nohighlight">\(\tanh(k t) \approx 1\)</span> and</p>
+<div class="math notranslate nohighlight">
+\[
+\mean{x^2} - \mean{x}^2 \approx  \frac{d^2}{4} kt (k t + 1) - (\frac{d}{2} k t)^2 = \frac{1}{4} d^2 k t 
+\]</div>
+<p>and the randomness:</p>
+<div class="math notranslate nohighlight">
+\[
+r = \frac{\mean{x^2} - \mean{x}^2}{d \mean{x}} = \frac{1}{2}
+\]</div>
+<p>For a one-step poission stepper we have</p>
+<div class="math notranslate nohighlight">
+\[
+r = 1,
+\]</div>
+<p>and for a two-step poisson stepper we have</p>
+<div class="math notranslate nohighlight">
+\[
+r = \frac{1}{2}.
+\]</div>
+<p>It is possible to show that for an m-step poisson stepper we get</p>
+<div class="math notranslate nohighlight">
+\[
+r = \frac{1}{m}
+\]</div>
+<div class="figure align-default" id="en">
+<a class="reference internal image-reference" href="week3/energy.png"><img alt="week3/energy.png" src="week3/energy.png" style="height: 90px;" /></a>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./week3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="randomness.html" title="previous page">Randomness</a>
+    <a class='right-next' id="next-link" href="trap.html" title="next page">Optical traps and kinesin’s randomness</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Florian Berger<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    
+  </body>
+</html>

@@ -16,4 +16,13 @@
     - file: week2/fluctVG
     - file: week2/open
 - file: week2/ex_wk2
+- file: week3/week3
+  sections:
+    - file: week3/molecularmotors
+    - file: week3/stepper
+    - file: week3/randomness
+    - file: week3/chemo
+    - file: week3/trap
+    - file: week3/open
+- file: week3/ex_wk3
 
