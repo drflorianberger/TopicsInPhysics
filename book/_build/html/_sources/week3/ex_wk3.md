@@ -1,37 +1,39 @@
 Week 3: Exercises
 =======================
  
-1. Current through a voltage-gated ion channel:
-What is the shape of the steady-state current as a function of voltage? Hint: the shape is determined by the product of two functions. 
+1. Show that the solution 
 
-2. Time-dependent solution of a two-state channel:
-What is the time-dependent open probability $\Po(t)$ of the simple two-state channel model given in equation {eq}`eq:2state` 
+$$
+P_j(t) = \frac{(k t)^j}{j!} e^{-kt}
+$$ (eq:solution)
 
-3. A three-state channel: Consider the following state diagram for a channel with two closed states:
+for the poisson stepper is a solution for the following master equation
 
-```{figure} 3states.png
----
-height: 70px
-name: 3states
----
-```
+$$
+\frac{d}{dt} P_0 (t) &= - k P_0 (t) \\
+\frac{d}{dt} P_j (t) &= k P_{j-1} - k P_{j}  \quad \text{for } j>0\\
+$$ (eq:states)
 
-Determine the steady-state open probability. Now we assume that the rate ..... depends on the voltage. What is the shape of the open probability as a function of voltage? How does the variance of the current from a cluster of three-state channels vary with the mean current? Is it still a quadratic function?
+Show that the solution {eq}`eq:solution` is normalized.
 
-4. Given the following variance of the current as a function of the mean current from a cell. What is the single-channel current and how many channels are involved?
+2. Use Taylor's theorem to show that
 
-```{figure} varex.png
----
-height: 200px
-name: varex
----
-```
+$$
+e^{kt} = \sum_{n=0}^{\infty}  \frac{(k t)^{n}}{n!}
+$$
 
-5. You only have an incomplete measurement of only the initial part of the variance of the current as a function of the mean current. This data can be well approximated with the red line in the plot. Assuming that it is the quadratic behavior that we discussed in the lecture. What quantities can you still determine from this measurement and what is its value?
+3. Derive the variance $\mean{(x-\mean{x})^2}$ for a poisson stepper with step size $d$,
 
-```{figure} incdata.png
----
-height: 200px
-name: 3states
----
-``` 
+$$
+x(t) = d N(t)
+$$
+
+4. Consider a two-step Markov process on the following network:
+IMAGE$
+The process starts in state $(0)$. The distribution of arrival times into the absorbing state $(2)$ is given by 
+
+$$
+\frac{d}{dt}P_2(t)$
+$$
+
+Show that this distribution of arrival times is not a simple exponential function.

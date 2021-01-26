@@ -7,7 +7,13 @@ The free energy release of ATP hydrolysis is on the order of $24 kT = 4.1 pN nm$
 
 To measure pN forces and the position of proteins, investigators use optical traps. The basic idea is to bind a single molecule to a sub-micron dielectric bead and then exert forces on this bead by using a focused laser.
 
-DRAWING Motor molecule and BEAD
+
+```{figure} kinesin.png
+---
+height: 170px
+name: kin
+---
+```
 
 Recall that light has momentum that is proportional to the energy $E$ and the refractive index $n_i$ of media $i$,
 
@@ -16,11 +22,23 @@ $$
 $$
 in which $c$ is the speed of light. Because of light refraction the momentum is changed resulting in a non-zero net force.
 
-DRAWING
+
+```{figure} trap1.png
+---
+height: 200px
+name: trap1
+---
+```
 
 In a laser beam with an intensity profile, the bead will experience a net force pushing towards the center of the beam.
 
-DRAWING
+
+```{figure} trap2.png
+---
+height: 250px
+name: trap2
+---
+```
 
 
 With such a set up it is possible to study the physics of molecular motors and measure their movement and position as a function of time. 
@@ -46,10 +64,3 @@ https://doi.org/10.1016/j.bpj.2009.08.001
 
 
 
-
-```{figure} energy.png
----
-height: 90px
-name: en
----
-```

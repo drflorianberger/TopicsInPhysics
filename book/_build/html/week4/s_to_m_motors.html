@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>From Single Motors to Multiple Motors &#8212; Physics of Fluctuations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"koc": "k_{\\rm{oc}}", "kco": "k_{\\rm{co}}", "Po": "P_{\\rm{o}}", "Pc": "P_{\\rm{c}}", "mean": ["\\langle #1 \\rangle", 1], "Fs": "F_{\\rm{s}}", "Fd": "F_{\\rm{d}}", "e": "\\epsilon"}}, "tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Cargo Transport by Multiple Motors" href="cargo.html" />
+    <link rel="prev" title="Intracellular Transport" href="intra_transport.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Physics of Fluctuations</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content.html">
+   Content in Jupyter Book
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week1/week1.html">
+   Week 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week2/week2.html">
+   Week 2: Fluctuation of Ion Channels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week2/ex_wk2.html">
+   Week 2: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week3/week3.html">
+   Week 3: Fluctuation of Molecular Motors
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week3/ex_wk3.html">
+   Week 3: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="week4.html">
+   Week 4: Long-range transport of intracellular cargos
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="intra_transport.html">
+     Intracellular Transport
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     From Single Motors to Multiple Motors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="cargo.html">
+     Cargo Transport by Multiple Motors
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/week4/s_to_m_motors.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#characteristics-of-a-single-motor">
+   Characteristics of a single motor
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#force-velocity-relation">
+   Force-velocity relation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#binding-and-unbinding">
+   Binding and unbinding
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="from-single-motors-to-multiple-motors">
+<h1>From Single Motors to Multiple Motors<a class="headerlink" href="#from-single-motors-to-multiple-motors" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="characteristics-of-a-single-motor">
+<h2>Characteristics of a single motor<a class="headerlink" href="#characteristics-of-a-single-motor" title="Permalink to this headline">¶</a></h2>
+<p>What motors can do:</p>
+<ul class="simple">
+<li><p>Walk along a filament (velocity)</p></li>
+<li><p>Bind to a filament (binding rate)</p></li>
+<li><p>Unbinding from a filament (unbinding rate)</p></li>
+</ul>
+<p>In principle this can depend on several quantities:</p>
+<ul class="simple">
+<li><p>Fule (free energy, ATP)</p></li>
+<li><p>Force</p></li>
+</ul>
+<p>The force-dependent behavior of single molecular motors has been studied with optical traps</p>
+</div>
+<div class="section" id="force-velocity-relation">
+<h2>Force-velocity relation<a class="headerlink" href="#force-velocity-relation" title="Permalink to this headline">¶</a></h2>
+<p>The velocity of motor decreases with an oposing force</p>
+<p>IMAGE</p>
+<ul class="simple">
+<li><p>Force-free velocity <span class="math notranslate nohighlight">\(v_0\)</span></p></li>
+<li><p>Stall force <span class="math notranslate nohighlight">\(\Fs\)</span></p></li>
+</ul>
+</div>
+<div class="section" id="binding-and-unbinding">
+<h2>Binding and unbinding<a class="headerlink" href="#binding-and-unbinding" title="Permalink to this headline">¶</a></h2>
+<p>Binding process is complicated but we assume to effectively describe it with a single rate</p>
+<div class="math notranslate nohighlight">
+\[
+\pi
+\]</div>
+<p>The unbinding process depends on the external force. It is intuitive to consider that this rate increases with the force on the molecular bond.</p>
+<p>IMAGE</p>
+<p>The most accepted model is an exponential force-dependence of the unbinding rate</p>
+<div class="math notranslate nohighlight">
+\[
+\e = \e_0 e^{F/\Fd},
+\]</div>
+<p>in which <span class="math notranslate nohighlight">\(\e_0\)</span> is the force-free unbinding rate and <span class="math notranslate nohighlight">\(\Fd\)</span> is the detachment force, a characteristic force scale.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./week4"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="intra_transport.html" title="previous page">Intracellular Transport</a>
+    <a class='right-next' id="next-link" href="cargo.html" title="next page">Cargo Transport by Multiple Motors</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Florian Berger<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    
+  </body>
+</html>

@@ -27,7 +27,7 @@
     <script src="../_static/sphinx-book-theme.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"koc": "k_{\\rm{oc}}", "kco": "k_{\\rm{co}}", "Po": "P_{\\rm{o}}", "Pc": "P_{\\rm{c}}", "mean": ["\\langle #1 \\rangle", 1]}}, "tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"koc": "k_{\\rm{oc}}", "kco": "k_{\\rm{co}}", "Po": "P_{\\rm{o}}", "Pc": "P_{\\rm{c}}", "mean": ["\\langle #1 \\rangle", 1], "Fs": "F_{\\rm{s}}", "Fd": "F_{\\rm{d}}", "e": "\\epsilon"}}, "tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -37,6 +37,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Week 4: Long-range transport of intracellular cargos" href="../week4/week4.html" />
     <link rel="prev" title="Open Question" href="open.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -106,6 +107,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Week 3: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week4/week4.html">
+   Week 4: Long-range transport of intracellular cargos
   </a>
  </li>
 </ul>
@@ -189,28 +195,43 @@
   <div class="section" id="week-3-exercises">
 <h1>Week 3: Exercises<a class="headerlink" href="#week-3-exercises" title="Permalink to this headline">¶</a></h1>
 <ol class="simple">
-<li><p>Current through a voltage-gated ion channel:
-What is the shape of the steady-state current as a function of voltage? Hint: the shape is determined by the product of two functions.</p></li>
-<li><p>Time-dependent solution of a two-state channel:
-What is the time-dependent open probability <span class="math notranslate nohighlight">\(\Po(t)\)</span> of the simple two-state channel model given in equation <a class="reference internal" href="../week2/stoc.html#equation-eq-2state">(2)</a></p></li>
-<li><p>A three-state channel: Consider the following state diagram for a channel with two closed states:</p></li>
+<li><p>Show that the solution</p></li>
 </ol>
-<div class="figure align-default" id="states">
-<a class="reference internal image-reference" href="week3/3states.png"><img alt="week3/3states.png" src="week3/3states.png" style="height: 70px;" /></a>
-</div>
-<p>Determine the steady-state open probability. Now we assume that the rate ….. depends on the voltage. What is the shape of the open probability as a function of voltage? How does the variance of the current from a cluster of three-state channels vary with the mean current? Is it still a quadratic function?</p>
+<div class="math notranslate nohighlight" id="equation-eq-solution">
+<span class="eqno">(5)<a class="headerlink" href="#equation-eq-solution" title="Permalink to this equation">¶</a></span>\[
+P_j(t) = \frac{(k t)^j}{j!} e^{-kt}
+\]</div>
+<p>for the poisson stepper is a solution for the following master equation</p>
+<div class="math notranslate nohighlight" id="equation-eq-states">
+<span class="eqno">(6)<a class="headerlink" href="#equation-eq-states" title="Permalink to this equation">¶</a></span>\[\begin{split}
+\frac{d}{dt} P_0 (t) &amp;= - k P_0 (t) \\
+\frac{d}{dt} P_j (t) &amp;= k P_{j-1} - k P_{j}  \quad \text{for } j&gt;0\\
+\end{split}\]</div>
+<p>Show that the solution <a class="reference internal" href="#equation-eq-solution">(5)</a> is normalized.</p>
 <ol class="simple">
-<li><p>Given the following variance of the current as a function of the mean current from a cell. What is the single-channel current and how many channels are involved?</p></li>
+<li><p>Use Taylor’s theorem to show that</p></li>
 </ol>
-<div class="figure align-default" id="varex">
-<a class="reference internal image-reference" href="week3/varex.png"><img alt="week3/varex.png" src="week3/varex.png" style="height: 200px;" /></a>
-</div>
+<div class="math notranslate nohighlight">
+\[
+e^{kt} = \sum_{n=0}^{\infty}  \frac{(k t)^{n}}{n!}
+\]</div>
 <ol class="simple">
-<li><p>You only have an incomplete measurement of only the initial part of the variance of the current as a function of the mean current. This data can be well approximated with the red line in the plot. Assuming that it is the quadratic behavior that we discussed in the lecture. What quantities can you still determine from this measurement and what is its value?</p></li>
+<li><p>Derive the variance <span class="math notranslate nohighlight">\(\mean{(x-\mean{x})^2}\)</span> for a poisson stepper with step size <span class="math notranslate nohighlight">\(d\)</span>,</p></li>
 </ol>
-<div class="figure align-default" id="id1">
-<a class="reference internal image-reference" href="week3/incdata.png"><img alt="week3/incdata.png" src="week3/incdata.png" style="height: 200px;" /></a>
-</div>
+<div class="math notranslate nohighlight">
+\[
+x(t) = d N(t)
+\]</div>
+<ol class="simple">
+<li><p>Consider a two-step Markov process on the following network:
+IMAGE<span class="math notranslate nohighlight">\(
+The process starts in state \)</span>(0)<span class="math notranslate nohighlight">\(. The distribution of arrival times into the absorbing state \)</span>(2)$ is given by</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\frac{d}{dt}P_2(t)$
+\]</div>
+<p>Show that this distribution of arrival times is not a simple exponential function.</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -242,6 +263,7 @@ What is the time-dependent open probability <span class="math notranslate nohigh
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="open.html" title="previous page">Open Question</a>
+    <a class='right-next' id="next-link" href="../week4/week4.html" title="next page">Week 4: Long-range transport of intracellular cargos</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

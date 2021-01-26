@@ -25,4 +25,9 @@
     - file: week3/trap
     - file: week3/open
 - file: week3/ex_wk3
+- file: week4/week4
+  sections:
+    - file: week4/intra_transport
+    - file: week4/s_to_m_motors
+    - file: week4/cargo
 

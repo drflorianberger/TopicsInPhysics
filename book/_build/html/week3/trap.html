@@ -27,7 +27,7 @@
     <script src="../_static/sphinx-book-theme.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"koc": "k_{\\rm{oc}}", "kco": "k_{\\rm{co}}", "Po": "P_{\\rm{o}}", "Pc": "P_{\\rm{c}}", "mean": ["\\langle #1 \\rangle", 1]}}, "tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"koc": "k_{\\rm{oc}}", "kco": "k_{\\rm{co}}", "Po": "P_{\\rm{o}}", "Pc": "P_{\\rm{c}}", "mean": ["\\langle #1 \\rangle", 1], "Fs": "F_{\\rm{s}}", "Fd": "F_{\\rm{d}}", "e": "\\epsilon"}}, "tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -141,6 +141,11 @@
    Week 3: Exercises
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week4/week4.html">
+   Week 4: Long-range transport of intracellular cargos
+  </a>
+ </li>
 </ul>
 
 </nav>
@@ -227,16 +232,22 @@
 </div>
 <p>The free energy release of ATP hydrolysis is on the order of <span class="math notranslate nohighlight">\(24 kT = 4.1 pN nm\)</span>. If the step size of a motor is on the order of nm, we expect that the force that a single motor can produce is on the order of pN.</p>
 <p>To measure pN forces and the position of proteins, investigators use optical traps. The basic idea is to bind a single molecule to a sub-micron dielectric bead and then exert forces on this bead by using a focused laser.</p>
-<p>DRAWING Motor molecule and BEAD</p>
+<div class="figure align-default" id="kin">
+<a class="reference internal image-reference" href="../_images/kinesin.png"><img alt="../_images/kinesin.png" src="../_images/kinesin.png" style="height: 170px;" /></a>
+</div>
 <p>Recall that light has momentum that is proportional to the energy <span class="math notranslate nohighlight">\(E\)</span> and the refractive index <span class="math notranslate nohighlight">\(n_i\)</span> of media <span class="math notranslate nohighlight">\(i\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[
  p = \frac{E n_i}{c},
 \]</div>
 <p>in which <span class="math notranslate nohighlight">\(c\)</span> is the speed of light. Because of light refraction the momentum is changed resulting in a non-zero net force.</p>
-<p>DRAWING</p>
+<div class="figure align-default" id="trap1">
+<a class="reference internal image-reference" href="../_images/trap1.png"><img alt="../_images/trap1.png" src="../_images/trap1.png" style="height: 200px;" /></a>
+</div>
 <p>In a laser beam with an intensity profile, the bead will experience a net force pushing towards the center of the beam.</p>
-<p>DRAWING</p>
+<div class="figure align-default" id="trap2">
+<a class="reference internal image-reference" href="../_images/trap2.png"><img alt="../_images/trap2.png" src="../_images/trap2.png" style="height: 250px;" /></a>
+</div>
 <p>With such a set up it is possible to study the physics of molecular motors and measure their movement and position as a function of time.</p>
 <p>Kinesin’s randomness has been reported:</p>
 <p>The first study that shows that kinesin is not a one-step poisson stepper <span class="math notranslate nohighlight">\(r&lt;1\)</span>:
@@ -245,9 +256,6 @@ https://doi.org/10.1073/pnas.91.25.11782</p>
 Schnitzer, M., Block, S. Kinesin hydrolyses one ATP per 8-nm step. Nature 388, 386–390 (1997)https://doi.org/10.1038/41111</p>
 <p>With novel tools the randomness can be better measured:</p>
 <p>https://doi.org/10.1016/j.bpj.2009.08.001</p>
-<div class="figure align-default" id="en">
-<a class="reference internal image-reference" href="week3/energy.png"><img alt="week3/energy.png" src="week3/energy.png" style="height: 90px;" /></a>
-</div>
 </div>
 
     <script type="text/x-thebe-config">

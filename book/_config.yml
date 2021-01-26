@@ -17,4 +17,7 @@ sphinx:
           "Po": "P_{\\rm{o}}"
           "Pc": "P_{\\rm{c}}"
           "mean": ["\\langle #1 \\rangle",1]
+          "Fs": "F_{\\rm{s}}"
+          "Fd": "F_{\\rm{d}}"
+          "e": "\\epsilon"
          
