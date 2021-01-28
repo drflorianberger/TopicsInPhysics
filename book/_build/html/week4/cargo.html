@@ -27,7 +27,7 @@
     <script src="../_static/sphinx-book-theme.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"koc": "k_{\\rm{oc}}", "kco": "k_{\\rm{co}}", "Po": "P_{\\rm{o}}", "Pc": "P_{\\rm{c}}", "mean": ["\\langle #1 \\rangle", 1], "Fs": "F_{\\rm{s}}", "Fd": "F_{\\rm{d}}", "e": "\\epsilon"}}, "tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"koc": "k_{\\rm{oc}}", "kco": "k_{\\rm{co}}", "Po": "P_{\\rm{o}}", "Pc": "P_{\\rm{c}}", "mean": ["\\langle #1 \\rangle", 1], "Fs": "F_{\\rm{s}}", "Fd": "F_{\\rm{d}}", "del": "\\partial", "e": "\\epsilon"}}, "tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -37,6 +37,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Cargo under Force" href="cargo_force.html" />
     <link rel="prev" title="From Single Motors to Multiple Motors" href="s_to_m_motors.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -128,7 +129,32 @@
      Cargo Transport by Multiple Motors
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="cargo_force.html">
+     Cargo under Force
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="critic.html">
+     Critique of the Model
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="open.html">
+     Open Question
+    </a>
+   </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ex_wk4.html">
+   Week 4: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week5/week5.html">
+   Week 5: Diffusion and the Stock Market
+  </a>
  </li>
 </ul>
 
@@ -293,6 +319,10 @@ S_1 = \frac{P_1}{1-P_0}
 \[
 \e_{\rm{eff}} = \e S_1 = \e \frac{P_1}{1-P_0}
 \]</div>
+<p>leading to the same average binding time (exersice):
+$<span class="math notranslate nohighlight">\(
+\mean{t} = \e_{rm{eff}}^{-1} = \frac{ 2\e + \pi}{2\e^2}
+\)</span>$</p>
 <p>Now, the run length of a cargo transported by two motors is given by</p>
 <div class="math notranslate nohighlight">
 \[
@@ -324,6 +354,22 @@ P_n = P_0 \sum_{i=0}^{n-1} \frac{\pi_i}{\e_{i+1}}
 <div class="math notranslate nohighlight">
 \[
 P_0 = \left(1+ \sum_{n=0}^{N-1} \prod_{i=0}^{n} \frac{\pi_i}{\e_{i+1}} \right)^{-1}
+\]</div>
+<p>To calculate the run length we can use the same argument as in the case of transport by two motors and determine the conditional probability that the cargo is bound and only by one motor:</p>
+<div class="math notranslate nohighlight">
+\[
+S = \frac{P_1}{1-P_0}
+\]</div>
+<p>Using this result we find the run length as</p>
+<div class="math notranslate nohighlight">
+\[
+\mean{x} = v\mean{t} = v \e_{\rm{eff}}^{-1} = v \e S = \frac{v}{N\pi} \left( (1+\frac{\pi}{\e})^N - 1\right)
+\]</div>
+<p>Exponential increase with <span class="math notranslate nohighlight">\(N\)</span></p>
+<p>Some numbers: <span class="math notranslate nohighlight">\(v = 1 \mu m/s\)</span>, <span class="math notranslate nohighlight">\(\e=1/s\)</span>, <span class="math notranslate nohighlight">\(\pi=1/s\)</span>, <span class="math notranslate nohighlight">\(N=10\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\mean{x} = 0.1 \mu m (2^{10} -1) = 0.1 (1024 -1) \approx 100 \mu m
 \]</div>
 </div>
 </div>
@@ -357,6 +403,7 @@ P_0 = \left(1+ \sum_{n=0}^{N-1} \prod_{i=0}^{n} \frac{\pi_i}{\e_{i+1}} \right)^{
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="s_to_m_motors.html" title="previous page">From Single Motors to Multiple Motors</a>
+    <a class='right-next' id="next-link" href="cargo_force.html" title="next page">Cargo under Force</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

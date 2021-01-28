@@ -93,6 +93,11 @@ Note that the term $1-P_0$ is the probability of finding a motor bound. With thi
 $$
 \e_{\rm{eff}} = \e S_1 = \e \frac{P_1}{1-P_0}
 $$
+leading to the same average binding time (exersice):
+$$
+\mean{t} = \e_{rm{eff}}^{-1} = \frac{ 2\e + \pi}{2\e^2}
+$$
+
 
 Now, the run length of a cargo transported by two motors is given by
 
@@ -131,3 +136,26 @@ from the normalization $\sum P_n = 1$, we get
 $$
 P_0 = \left(1+ \sum_{n=0}^{N-1} \prod_{i=0}^{n} \frac{\pi_i}{\e_{i+1}} \right)^{-1}
 $$
+
+To calculate the run length we can use the same argument as in the case of transport by two motors and determine the conditional probability that the cargo is bound and only by one motor:
+
+$$
+S = \frac{P_1}{1-P_0}
+$$
+
+Using this result we find the run length as
+
+$$
+\mean{x} = v\mean{t} = v \e_{\rm{eff}}^{-1} = v \e S = \frac{v}{N\pi} \left( (1+\frac{\pi}{\e})^N - 1\right)
+$$
+
+Exponential increase with $N$
+
+Some numbers: $v = 1 \mu m/s$, $\e=1/s$, $\pi=1/s$, $N=10$
+
+$$
+\mean{x} = 0.1 \mu m (2^{10} -1) = 0.1 (1024 -1) \approx 100 \mu m
+$$
+
+
+

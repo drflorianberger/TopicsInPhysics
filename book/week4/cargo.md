@@ -146,6 +146,16 @@ $$
 Using this result we find the run length as
 
 $$
-\mean{x} = v\mean{t} = v \e_{rm{eff}}^{-1} = \e S = \frac{v}{N\pi} \left( (1+\frac{\pi}{\e})^N - 1\right)
+\mean{x} = v\mean{t} = v \e_{\rm{eff}}^{-1} = v \e S = \frac{v}{N\pi} \left( (1+\frac{\pi}{\e})^N - 1\right)
 $$
+
+Exponential increase with $N$
+
+Some numbers: $v = 1 \mu m/s$, $\e=1/s$, $\pi=1/s$, $N=10$
+
+$$
+\mean{x} = 0.1 \mu m (2^{10} -1) = 0.1 (1024 -1) \approx 100 \mu m
+$$
+
+
 

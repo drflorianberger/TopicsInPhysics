@@ -27,7 +27,7 @@
     <script src="../_static/sphinx-book-theme.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"koc": "k_{\\rm{oc}}", "kco": "k_{\\rm{co}}", "Po": "P_{\\rm{o}}", "Pc": "P_{\\rm{c}}", "mean": ["\\langle #1 \\rangle", 1], "Fs": "F_{\\rm{s}}", "Fd": "F_{\\rm{d}}", "e": "\\epsilon"}}, "tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"koc": "k_{\\rm{oc}}", "kco": "k_{\\rm{co}}", "Po": "P_{\\rm{o}}", "Pc": "P_{\\rm{c}}", "mean": ["\\langle #1 \\rangle", 1], "Fs": "F_{\\rm{s}}", "Fd": "F_{\\rm{d}}", "del": "\\partial", "e": "\\epsilon"}}, "tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -37,6 +37,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Week 4: Exercises" href="ex_wk4.html" />
+    <link rel="prev" title="Critique of the Model" href="critic.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -76,7 +78,7 @@
   </a>
  </li>
 </ul>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../content.html">
    Content in Jupyter Book
@@ -107,9 +109,51 @@
    Week 3: Exercises
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 current active">
   <a class="reference internal" href="week4.html">
    Week 4: Long-range transport of intracellular cargos
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="intra_transport.html">
+     Intracellular Transport
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="s_to_m_motors.html">
+     From Single Motors to Multiple Motors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="cargo.html">
+     Cargo Transport by Multiple Motors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="cargo_force.html">
+     Cargo under Force
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="critic.html">
+     Critique of the Model
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Open Question
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ex_wk4.html">
+   Week 4: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week5/week5.html">
+   Week 5: Diffusion and the Stock Market
   </a>
  </li>
 </ul>
@@ -192,9 +236,16 @@
                 
   <div class="section" id="open-question">
 <h1>Open Question<a class="headerlink" href="#open-question" title="Permalink to this headline">¶</a></h1>
-<p>Optical traps fundamentally changed our understanding of the dynamics of single molecules and the involved forces.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9JQDD20X7jA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>The biggest challenge for the futur will be to understand how these mechanisms that we discover in isolated systems are contributing to the function in cells.</p>
+<p>Unexplained findings about cooperative transport</p>
+<ul class="simple">
+<li><p>Is bidirectional transport a tug-of-war? https://doi.org/10.1038/nrm3853</p></li>
+</ul>
+<p>IMAGE</p>
+<ul class="simple">
+<li><p>Superadditivity of dynein velocities. Two motors are twice as fast: https://doi.org/10.1038/nature25462</p></li>
+</ul>
+<p>More about the biology of molecular motors</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9RUHJhskW00" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
     <script type="text/x-thebe-config">
@@ -225,6 +276,8 @@
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="critic.html" title="previous page">Critique of the Model</a>
+    <a class='right-next' id="next-link" href="ex_wk4.html" title="next page">Week 4: Exercises</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

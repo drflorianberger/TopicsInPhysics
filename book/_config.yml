@@ -19,5 +19,6 @@ sphinx:
           "mean": ["\\langle #1 \\rangle",1]
           "Fs": "F_{\\rm{s}}"
           "Fd": "F_{\\rm{d}}"
+          "del": "\\partial"
           "e": "\\epsilon"
          

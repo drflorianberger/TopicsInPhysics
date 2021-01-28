@@ -30,4 +30,13 @@
     - file: week4/intra_transport
     - file: week4/s_to_m_motors
     - file: week4/cargo
+    - file: week4/cargo_force
+    - file: week4/critic
+    - file: week4/open
+- file: week4/ex_wk4
+- file: week5/week5
+  sections:
+    - file: week5/randomwalks
+    - file: week5/diffeq
+    - file: week5/driftdiffeq
 
