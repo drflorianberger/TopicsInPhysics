@@ -4,15 +4,31 @@
 
 Consider the case of a cargo transported by two motors
 
-IMAGE
+```{figure} cargo2mot.png
+---
+height: 100px
+name: cargo2
+---
+```
 
 We can formalize this behavior by assigning discrete states
 
-IMAGE
+```{figure} cargo2motstates.png
+---
+height: 170px
+name: cargo2state
+---
+```
 
 Next, we introduce rates between these states
 
-IMAGES
+
+```{figure} cargo2motstatesRates.png
+---
+height: 170px
+name: cargo2staterates
+---
+```
 
 How are these rates related to the single motor rates? For simplicity we assume a load free case, $F=0$. Because the motors are independent and identical the rates add up. The effective rate for two unbound motors to bind is
 
@@ -60,15 +76,29 @@ What is the run length of a cargo transported by two motors? If the cargo is tra
 
 There are several methods to calculate $\mean{t}$. We can modify the graph such that it only accounts for the case when the motor is bound and promote the unbound state to an absorbing state
 
-IMAGE
+```{figure} absorbing2mot.png
+---
+height: 70px
+name: absorbing2mot
+---
+```
 
-Now we redirect the arrow going into the absorbing state to the starting state and close the network. The inverse prbability current $J$ to go along this pathway is exactly the average time the motor is bound.
+Now we redirect the arrow going into the absorbing state to the starting state and close the network. 
+
+```{figure} closed2mot.png
+---
+height: 70px
+name: closed2mot
+---
+```
+
+The inverse prbability current $J$ to go along this pathway is exactly the average time the motor is bound.
 
 $$
 J = \e S_1
 $$
 
-To calculate S_1 is easy, because it is a two state system
+$S_1$ can be determined from the two state system as
 
 $$
 S_1 = \frac{2\e}{ 2\e + \pi}
@@ -93,9 +123,11 @@ Note that the term $1-P_0$ is the probability of finding a motor bound. With thi
 $$
 \e_{\rm{eff}} = \e S_1 = \e \frac{P_1}{1-P_0}
 $$
+
 leading to the same average binding time (exersice):
+
 $$
-\mean{t} = \e_{rm{eff}}^{-1} = \frac{ 2\e + \pi}{2\e^2}
+\mean{t} = \e_{\rm{eff}}^{-1} = \frac{ 2\e + \pi}{2\e^2}
 $$
 
 
@@ -105,7 +137,13 @@ $$
 \mean{x}_2 = v J^{-1} = v \frac{ 2\e + \pi}{2\e^2} = \frac{v}{\e} \left(1 + \frac{\pi}{2\e}\right) = \mean{x}_1 \left(1 + \frac{1}{2} w \right)
 $$
 
-IMAGE
+
+```{figure} scaling1.png
+---
+height: 170px
+name: scale1
+---
+```
 
 How does that scale with the number of motors?
 
@@ -114,7 +152,12 @@ How does that scale with the number of motors?
 
 Let's consider the case of $N$ identical motors transporting a common cargo.
 
-IMAGE
+```{figure} multimotor.png
+---
+height: 50px
+name: multi
+---
+```
 
 $$
 \frac{d}{dt} P_0 &= -\pi_0 P_0 + \e_1 P_1\\ 
@@ -157,5 +200,10 @@ $$
 \mean{x} = 0.1 \mu m (2^{10} -1) = 0.1 (1024 -1) \approx 100 \mu m
 $$
 
-
+```{figure} scaling2.png
+---
+height: 170px
+name: scaling2
+---
+```
 

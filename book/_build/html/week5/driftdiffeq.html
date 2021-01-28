@@ -37,6 +37,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Einstein Equation" href="einstein.html" />
     <link rel="prev" title="Diffusion Equation" href="diffeq.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -138,6 +139,21 @@
      Drift Diffusion Equation
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="einstein.html">
+     Einstein Equation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="applications.html">
+     Applications
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="open.html">
+     Open Question
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -209,7 +225,14 @@
             <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
-            
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#single-particle-description">
+   Single particle description
+  </a>
+ </li>
+</ul>
+
         </nav>
     </div>
 </div>
@@ -232,11 +255,39 @@ P(x,t+\Delta t) = q P(x-L,t) + (1-q) P(x+L,t)
 \[
 \frac{\del p}{\del t} = -(2q-1)\frac{L}{\Delta t} \frac{\del p}{\del x} + \frac{L^2}{2 \Delta t} \frac{\del^2 p}{\del p^2}
 \]</div>
-<p>with <span class="math notranslate nohighlight">\(D = \frac{L^2}{2 \Delta t}\)</span> and <span class="math notranslate nohighlight">\(v=(2q-1)\frac{L}{\Delta t}\)</span>, derive the Fokker-Planck equation:</p>
+<p>with <span class="math notranslate nohighlight">\(D = \frac{L^2}{2 \Delta t}\)</span> and <span class="math notranslate nohighlight">\(v=(2q-1)\frac{L}{\Delta t}\)</span>, we derive the Fokker-Planck equation:</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{\del p}{\del t} = - v \frac{\del p}{\del x} + D \frac{\del^2 p}{\del p^2}
 \]</div>
+<p>If we assume that the velocity is a result of a constant force applied to a particle with mobility <span class="math notranslate nohighlight">\(\gamma\)</span> (<span class="math notranslate nohighlight">\(F = v/\gamma\)</span>), we can rewrite</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\del p}{\del t} = - \gamma F \frac{\del p}{\del x} + D \frac{\del^2 p}{\del p^2}
+\]</div>
+<div class="section" id="single-particle-description">
+<h2>Single particle description<a class="headerlink" href="#single-particle-description" title="Permalink to this headline">¶</a></h2>
+<p>How can we describe the change of the position of a single particle?</p>
+<div class="math notranslate nohighlight">
+\[
+x(t + \Delta t) = x(t) + \gamma F \Delta t + l(t)
+\]</div>
+<p>If we assume a dilute system we can describe the net motion between collisions as</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{2} \frac{F}{m} \Delta t^2 = F \Delta t \frac{\Delta t}{2 m}
+\]</div>
+<p>therefore, we identify</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma = \frac{\Delta t}{2 m} = \frac{\Delta t}{2 m} (D \frac{2 \Delta t}{L^2}) = \frac{D}{m(L/\Delta t)^2} = \frac{D}{m \mean{v}^2} 
+\]</div>
+<p>Important result</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma = \frac{D}{m \mean{v}^2}
+\]</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -268,6 +319,7 @@ P(x,t+\Delta t) = q P(x-L,t) + (1-q) P(x+L,t)
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="diffeq.html" title="previous page">Diffusion Equation</a>
+    <a class='right-next' id="next-link" href="einstein.html" title="next page">Einstein Equation</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

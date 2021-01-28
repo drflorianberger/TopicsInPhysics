@@ -18,7 +18,13 @@ The force-dependent behavior of single molecular motors has been studied with op
 
 The velocity of motor decreases with an oposing force
 
-IMAGE
+```{figure} forcevelo.png
+---
+height: 170px
+name: forcevelo
+---
+```
+
 
 - Force-free velocity $v_0$
 - Stall force $\Fs$
@@ -33,7 +39,13 @@ $$
 
 The unbinding process depends on the external force. It is intuitive to consider that this rate increases with the force on the molecular bond.
 
-IMAGE
+```{figure} unbinding.png
+---
+height: 170px
+name: unbinding
+---
+```
+
 
 The most accepted model is an exponential force-dependence of the unbinding rate
 

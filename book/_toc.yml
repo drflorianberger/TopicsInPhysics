@@ -39,4 +39,7 @@
     - file: week5/randomwalks
     - file: week5/diffeq
     - file: week5/driftdiffeq
+    - file: week5/einstein
+    - file: week5/applications
+    - file: week5/open
 
