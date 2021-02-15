@@ -18,9 +18,15 @@ $$
 \mean{s_N^2}
 $$
 
-How does the MSD scale with $N$?
+How does the MSD scale with $N$? (Think about flipping a coin. After each coin flip, you add $\pm 1$.)
 
-IMAGE OF TREE
+```{figure} tree.png
+---
+height: 200px
+name: tree
+---
+```
+
 
 $$
 \mean{s_1^2} &= \frac{1}{2}(-1)^2 + \frac{1}{2} (1)^2 = 1\\
@@ -59,15 +65,18 @@ $$
 If we introduce the total time $t$ and the stepping rate $1/\Delta t$, we can rewrite this equaiton to
 
 $$
-\mean{s^2_N} = \frac{L^2}{\Delta t} t
+\mean{s^2} = \frac{L^2}{\Delta t} t
 $$
 
 Defining a diffusion coeficient $D = \frac{L^2}{2 \Delta t}$, we arrive at the mean squared displacement
 
 $$
-\mean{s^2_N} = 2 D t
+\mean{s^2} = 2 D t
 $$
 
-IMAGE
-
-### Diffusion Equation
+```{figure} msd.png
+---
+height: 200px
+name: msd
+---
+```

@@ -153,7 +153,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../week5/week5.html">
-   Week 5: Diffusion and the Stock Market
+   Week 5: Diffusion
   </a>
  </li>
 </ul>
@@ -245,17 +245,23 @@
 <h1>Cargo under Force<a class="headerlink" href="#cargo-under-force" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="force-dependency-of-single-motors">
 <h2>Force-dependency of single motors<a class="headerlink" href="#force-dependency-of-single-motors" title="Permalink to this headline">¶</a></h2>
-<p>IMAGE</p>
+<div class="figure align-default" id="recal">
+<a class="reference internal image-reference" href="../_images/recal.png"><img alt="../_images/recal.png" src="../_images/recal.png" style="height: 170px;" /></a>
+</div>
 <p>Recall, we introduced the force-velocity relation and the force-dependent unbinding rate.</p>
 <p>What happens if a cargo is under a constant load force <span class="math notranslate nohighlight">\(F\)</span> and transported by two motors?</p>
-<p>IMAGE</p>
+<div class="figure align-default" id="motors">
+<a class="reference internal image-reference" href="../_images/2motors.png"><img alt="../_images/2motors.png" src="../_images/2motors.png" style="height: 170px;" /></a>
+</div>
 <p>As a first approximation, we can assume that the force is equally shared between the two motors when they are bound to the filament, such that</p>
 <div class="math notranslate nohighlight">
 \[
 F_{\rm{mot}} = F/2. 
 \]</div>
 <p>Now, we can assign different velocities to our state diagram</p>
-<p>IMAGE</p>
+<div class="figure align-default" id="cargovelo">
+<a class="reference internal image-reference" href="../_images/2cargovelo.png"><img alt="../_images/2cargovelo.png" src="../_images/2cargovelo.png" style="height: 70px;" /></a>
+</div>
 <p>in which</p>
 <div class="math notranslate nohighlight">
 \[
@@ -266,9 +272,7 @@ v_i = v(F/i)
 \[
 \mean{v} = \sum v_i P_i
 \]</div>
-<p>To account for the force-dependent unbinding behavior we make the same approximation and introduce an unbinding rate that depends on the force:</p>
-<p>IMAGE</p>
-<p>Now for our effective rates we obtain</p>
+<p>To account for the force-dependent unbinding behavior, we make the same approximation and introduce an unbinding rate that depends on the force. Now for our effective rates, we obtain</p>
 <div class="math notranslate nohighlight">
 \[
 \e_i = i \e(F/i) = i \e_0 e^{F/i \Fd}

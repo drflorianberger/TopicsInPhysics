@@ -2,7 +2,12 @@
 
 Let's consider a drift in the diffusion process. 
 
-IMAGE 2D lattice
+```{figure} drift.png
+---
+height: 200px
+name: drift
+---
+```
 
 Because of the discretization, we can write
 
@@ -36,13 +41,13 @@ $$
 x(t + \Delta t) = x(t) + \gamma F \Delta t + l(t)
 $$
 
-If we assume a dilute system we can describe the net motion between collisions as
+If we assume a dilute system, we can describe the net motion between collisions as
 
 $$
-\frac{1}{2} \frac{F}{m} \Delta t^2 = F \Delta t \frac{\Delta t}{2 m}
+\frac{1}{2} \frac{F}{m} \Delta t^2 = F \Delta t \frac{\Delta t}{2 m}.
 $$
 
-therefore, we identify
+Therefore, we identify
 
 $$
 \gamma = \frac{\Delta t}{2 m} = \frac{\Delta t}{2 m} (D \frac{2 \Delta t}{L^2}) = \frac{D}{m(L/\Delta t)^2} = \frac{D}{m \mean{v}^2} 

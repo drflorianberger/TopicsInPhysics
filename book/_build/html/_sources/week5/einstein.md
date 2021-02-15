@@ -73,6 +73,11 @@ $$
 \mean{x \frac{\del H}{\del x}} = k \mean{x^2} = kT
 $$
 
-From this equation we can estimate stiffnesses of fluctuation soft objects
+From this equation, we can estimate stiffnesses of a fluctuating protein attached to a wall.
 
-IMAGE
+```{figure} fluct.png
+---
+height: 200px
+name: fluct
+---
+```

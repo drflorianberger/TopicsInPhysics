@@ -5,7 +5,12 @@
     - file: notebooks
 - file: week1/week1
   sections:
-    - file: week1/lecture1
+    - file: week1/intro
+    - file: week1/whatislife
+    - file: week1/math
+    - file: week1/randomvar
+    - file: week1/master
+    - file: week1/open
 - file: week2/week2
   sections:
     - file: week2/separate_charges

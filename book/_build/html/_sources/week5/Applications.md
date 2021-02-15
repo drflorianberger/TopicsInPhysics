@@ -4,7 +4,21 @@
 
 Receptor diffusion at synapses
 
-IMAGE (annomoulus diffusion)
+```{figure} msdsub.png
+---
+height: 200px
+name: fluct
+---
+```
+
+There could be very different moleuclar reasons for subdiffusion
+
+```{figure} msub.png
+---
+height: 200px
+name: msub
+---
+```
 
 See figure 2F in
 https://doi.org/10.1101/2020.07.06.188995
@@ -14,7 +28,17 @@ https://doi.org/10.1101/2020.07.06.188995
 
 How can a cell know where it is located in a tissue?
 
-IMAGE
+```{figure} mg.png
+---
+height: 200px
+name: mg
+---
+```
+
+
+Classic paper by Alan Turing (1952):
+https://doi.org/10.1098/rstb.1952.0012
+
 
 ### A Random walk down wall street
 

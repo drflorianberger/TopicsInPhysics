@@ -38,7 +38,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Diffusion Equation" href="diffeq.html" />
-    <link rel="prev" title="Week 5: Diffusion and the Stock Market" href="week5.html" />
+    <link rel="prev" title="Week 5: Diffusion" href="week5.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -121,7 +121,7 @@
  </li>
  <li class="toctree-l1 current active">
   <a class="reference internal" href="week5.html">
-   Week 5: Diffusion and the Stock Market
+   Week 5: Diffusion
   </a>
   <ul class="current">
    <li class="toctree-l2 current active">
@@ -231,11 +231,6 @@
    Random unit stepper
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#diffusion-equation">
-   Diffusion Equation
-  </a>
- </li>
 </ul>
 
         </nav>
@@ -262,8 +257,10 @@ s_N = \sum_{i=1}^N l_i
 \[
 \mean{s_N^2}
 \]</div>
-<p>How does the MSD scale with <span class="math notranslate nohighlight">\(N\)</span>?</p>
-<p>IMAGE OF TREE</p>
+<p>How does the MSD scale with <span class="math notranslate nohighlight">\(N\)</span>? (Think about flipping a coin. After each coin flip, you add <span class="math notranslate nohighlight">\(\pm 1\)</span>.)</p>
+<div class="figure align-default" id="tree">
+<a class="reference internal image-reference" href="../_images/tree.png"><img alt="../_images/tree.png" src="../_images/tree.png" style="height: 200px;" /></a>
+</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \mean{s_1^2} &amp;= \frac{1}{2}(-1)^2 + \frac{1}{2} (1)^2 = 1\\
@@ -295,17 +292,16 @@ s_N = \sum_{i=1}^N l_i
 <p>If we introduce the total time <span class="math notranslate nohighlight">\(t\)</span> and the stepping rate <span class="math notranslate nohighlight">\(1/\Delta t\)</span>, we can rewrite this equaiton to</p>
 <div class="math notranslate nohighlight">
 \[
-\mean{s^2_N} = \frac{L^2}{\Delta t} t
+\mean{s^2} = \frac{L^2}{\Delta t} t
 \]</div>
 <p>Defining a diffusion coeficient <span class="math notranslate nohighlight">\(D = \frac{L^2}{2 \Delta t}\)</span>, we arrive at the mean squared displacement</p>
 <div class="math notranslate nohighlight">
 \[
-\mean{s^2_N} = 2 D t
+\mean{s^2} = 2 D t
 \]</div>
-<p>IMAGE</p>
+<div class="figure align-default" id="msd">
+<a class="reference internal image-reference" href="../_images/msd.png"><img alt="../_images/msd.png" src="../_images/msd.png" style="height: 200px;" /></a>
 </div>
-<div class="section" id="diffusion-equation">
-<h2>Diffusion Equation<a class="headerlink" href="#diffusion-equation" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -337,7 +333,7 @@ s_N = \sum_{i=1}^N l_i
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="week5.html" title="previous page">Week 5: Diffusion and the Stock Market</a>
+    <a class='left-prev' id="prev-link" href="week5.html" title="previous page">Week 5: Diffusion</a>
     <a class='right-next' id="next-link" href="diffeq.html" title="next page">Diffusion Equation</a>
 
     </div>

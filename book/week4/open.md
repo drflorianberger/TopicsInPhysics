@@ -4,7 +4,14 @@ Unexplained findings about cooperative transport
 
 - Is bidirectional transport a tug-of-war? https://doi.org/10.1038/nrm3853
 
-IMAGE
+
+```{figure} bi.png
+---
+height: 170px
+name: bi
+---
+```
+
 
 - Superadditivity of dynein velocities. Two motors are twice as fast: https://doi.org/10.1038/nature25462 
 

@@ -5,7 +5,12 @@ Cargo transported by two molecular motors
 
 Let's consider the following state space:
 
-IMAGE
+```{figure} cargo2motstatesRates.png
+---
+height: 170px
+name: cargo2staterates
+---
+```
 
 1) Calculate the state probabilities $P_i$ in terms of the rates given in the diagram and show that they are normalized.
 
