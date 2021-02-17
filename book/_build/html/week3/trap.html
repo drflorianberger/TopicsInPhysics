@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Optical traps and kinesin’s randomness &#8212; Physics of Fluctuations</title>
+    <title>Optical traps and kinesin’s randomness &#8212; Stochastic Physics of the Molecules of Life</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -60,7 +60,7 @@
   <img src="../_static/logo.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">Physics of Fluctuations</h1>
+  <h1 class="site-logo" id="site-title">Stochastic Physics of the Molecules of Life</h1>
   
 </a>
 </div>
@@ -80,23 +80,28 @@
 </ul>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../content.html">
-   Content in Jupyter Book
+  <a class="reference internal" href="../week1/week1.html">
+   Week 1: Introduction
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week1/week1.html">
-   Week 1
+  <a class="reference internal" href="../week1/ex_wk1.html">
+   Week 1: Exercises
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../week2/week2.html">
-   Week 2: Fluctuation of Ion Channels
+   Week 2: Fluctuations of Ion Channels
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../week2/ex_wk2.html">
    Week 2: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week2/paper.html">
+   Week 2: Paper
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -142,6 +147,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="paper.html">
+   Week 3: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week4/week4.html">
    Week 4: Long-range transport of intracellular cargos
   </a>
@@ -152,8 +162,23 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../week4/paper.html">
+   Week 4: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week5/week5.html">
    Week 5: Diffusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week5/paper.html">
+   Week 5: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../videos.html">
+   Videos of Talks
   </a>
  </li>
 </ul>
@@ -236,11 +261,7 @@
                 
   <div class="section" id="optical-traps-and-kinesin-s-randomness">
 <h1>Optical traps and kinesin’s randomness<a class="headerlink" href="#optical-traps-and-kinesin-s-randomness" title="Permalink to this headline">¶</a></h1>
-<div class="admonition-you-will-learn admonition">
-<p class="admonition-title">You will learn</p>
-<p>the concept of randomness</p>
-</div>
-<p>The free energy release of ATP hydrolysis is on the order of <span class="math notranslate nohighlight">\(24 kT = 4.1 pN nm\)</span>. If the step size of a motor is on the order of nm, we expect that the force that a single motor can produce is on the order of pN.</p>
+<p>The free energy release of ATP hydrolysis is on the order of <span class="math notranslate nohighlight">\(24 kT = 4.1 \rm{pN} \rm{nm}\)</span>. If the step size of a motor is on the order of nm, we expect that the force that a single motor can produce is on the order of pN.</p>
 <p>To measure pN forces and the position of proteins, investigators use optical traps. The basic idea is to bind a single molecule to a sub-micron dielectric bead and then exert forces on this bead by using a focused laser.</p>
 <div class="figure align-default" id="kin">
 <a class="reference internal image-reference" href="../_images/kinesin.png"><img alt="../_images/kinesin.png" src="../_images/kinesin.png" style="height: 170px;" /></a>
@@ -250,7 +271,7 @@
 \[
  p = \frac{E n_i}{c},
 \]</div>
-<p>in which <span class="math notranslate nohighlight">\(c\)</span> is the speed of light. Because of light refraction the momentum is changed resulting in a non-zero net force.</p>
+<p>in which <span class="math notranslate nohighlight">\(c\)</span> is the speed of light. Because of light refraction, the momentum is changed, resulting in a non-zero net force.</p>
 <div class="figure align-default" id="trap1">
 <a class="reference internal image-reference" href="../_images/trap1.png"><img alt="../_images/trap1.png" src="../_images/trap1.png" style="height: 200px;" /></a>
 </div>
@@ -260,12 +281,12 @@
 </div>
 <p>With such a set up it is possible to study the physics of molecular motors and measure their movement and position as a function of time.</p>
 <p>Kinesin’s randomness has been reported:</p>
-<p>The first study that shows that kinesin is not a one-step poisson stepper <span class="math notranslate nohighlight">\(r&lt;1\)</span>:
-https://doi.org/10.1073/pnas.91.25.11782</p>
-<p>When considering backward steps the randomness can increase <span class="math notranslate nohighlight">\(r&gt;1\)</span>:
-Schnitzer, M., Block, S. Kinesin hydrolyses one ATP per 8-nm step. Nature 388, 386–390 (1997)https://doi.org/10.1038/41111</p>
-<p>With novel tools the randomness can be better measured:</p>
-<p>https://doi.org/10.1016/j.bpj.2009.08.001</p>
+<p>The first study that shows that kinesin is not a one-step Poisson stepper <span class="math notranslate nohighlight">\(r&lt;1\)</span>:</p>
+<p><a class="reference external" href="https://doi.org/10.1073/pnas.91.25.11782">Kinesin is not a one-step stepper</a></p>
+<p>When considering backward steps, the randomness can increase <span class="math notranslate nohighlight">\(r&gt;1\)</span>:</p>
+<p><a class="reference external" href="https://doi.org/10.1038/41111">Kinesin’s backward stepping</a></p>
+<p>Using novel tools, the randomness can be measured more precisely:</p>
+<p><a class="reference external" href="https://doi.org/10.1016/j.bpj.2009.08.001">Measurement of Randomness</a></p>
 </div>
 
     <script type="text/x-thebe-config">

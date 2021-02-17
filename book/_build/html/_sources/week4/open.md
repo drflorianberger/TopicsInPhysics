@@ -13,7 +13,7 @@ name: bi
 ```
 
 
-- Superadditivity of dynein velocities. Two motors are twice as fast: https://doi.org/10.1038/nature25462 
+- Superadditivity of dynein velocities. [Two motors are twice as fast](https://doi.org/10.1038/nature25462)
 
 More about the biology of molecular motors
 

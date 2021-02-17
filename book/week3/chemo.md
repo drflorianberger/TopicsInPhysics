@@ -1,15 +1,12 @@
 # Chemomechanical Cycle
 
-```{admonition} You will learn
-the concept of chemomechanical cycles.
-```
-Next, we consider a more accurate descriptions of a molecular motor. A motor uses the free energy from the hydrolysis of ATP
+Next, we consider a more accurate description of a molecular motor. A motor uses the free energy from the hydrolysis of ATP
 
 $$
 ATP \rightarrow P_i + ADP
 $$
 
-to perform a step. The chemical cycle involves the binding of ATP to an empty motor head, the release of $P_i$, and the release of $ADP$. The mechanical cycle consists of a sequence of conformational changes, which result in a step.
+to perform a step. The chemical cycle involves the binding of ATP to an empty motorhead, the release of $P_i$, and the release of $ADP$. The mechanical cycle consists of a sequence of conformational changes, which result in a step.
 
 
 ```{figure} chem.png
@@ -19,7 +16,7 @@ name: chem
 ---
 ```
 
-It is possible to calculate the waiting time distribution and other quantities such as the thermodynamical efficiency for these chemomechanical cycles. However the real chllange is to connect them to experimental data.
+It is possible to calculate the waiting time distribution and other quantities such as the thermodynamical efficiency for these chemomechanical cycles. However, the real challenge is to connect them to experimental data.
 
 In the following, we consider a very simple cycle with one state.
 
@@ -31,9 +28,9 @@ name: schem
 ---
 ```
 
-Next, we want determine the randomness of such a motor.
+Next, we want to determine the randomness of such a motor.
 
-By renaming the states we can use our result from the poisson stepper
+By renaming the states, we can use our result from the Poisson stepper
 
 ```{figure} rnstates.png
 ---
@@ -46,7 +43,7 @@ $$
 A_n \approx P_{2n},
 $$
 
-here we cannot use an equal sign, because the normalization is not correct. We can calculate ther nurmalization by
+here, we cannot use an equal sign because the normalization is not correct. We can calculate the normalization by
 
 $$
 \sum_{n=0}^{\infty} P_{2n} = \cosh(k t) e^{-k t}.
@@ -85,29 +82,21 @@ $$
 r = \frac{\mean{x^2} - \mean{x}^2}{d \mean{x}} = \frac{1}{2}
 $$
 
-For a one-step poission stepper we have
+For a one-step Poisson stepper, we have
 
 $$
 r = 1,
 $$
 
-and for a two-step poisson stepper we have
+and for a two-step Poisson stepper, we have
 
 $$
 r = \frac{1}{2}.
 $$
 
-It is possible to show that for an m-step poisson stepper we get
+It is possible to show that for an m-step Poisson stepper, we get
 
 $$
 r = \frac{1}{m}
 $$
 
-
-
-```{figure} energy.png
----
-height: 90px
-name: en
----
-```

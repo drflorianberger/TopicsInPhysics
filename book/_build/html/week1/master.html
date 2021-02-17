@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>The Master equation &#8212; Physics of Fluctuations</title>
+    <title>The Master equation &#8212; Stochastic Physics of the Molecules of Life</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -60,7 +60,7 @@
   <img src="../_static/logo.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">Physics of Fluctuations</h1>
+  <h1 class="site-logo" id="site-title">Stochastic Physics of the Molecules of Life</h1>
   
 </a>
 </div>
@@ -79,14 +79,9 @@
  </li>
 </ul>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../content.html">
-   Content in Jupyter Book
-  </a>
- </li>
  <li class="toctree-l1 current active">
   <a class="reference internal" href="week1.html">
-   Week 1
+   Week 1: Introduction
   </a>
   <ul class="current">
    <li class="toctree-l2">
@@ -122,13 +117,23 @@
   </ul>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="ex_wk1.html">
+   Week 1: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week2/week2.html">
-   Week 2: Fluctuation of Ion Channels
+   Week 2: Fluctuations of Ion Channels
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../week2/ex_wk2.html">
    Week 2: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week2/paper.html">
+   Week 2: Paper
   </a>
  </li>
  <li class="toctree-l1">
@@ -142,6 +147,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../week3/paper.html">
+   Week 3: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week4/week4.html">
    Week 4: Long-range transport of intracellular cargos
   </a>
@@ -152,8 +162,23 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../week4/paper.html">
+   Week 4: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week5/week5.html">
    Week 5: Diffusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week5/paper.html">
+   Week 5: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../videos.html">
+   Videos of Talks
   </a>
  </li>
 </ul>
@@ -236,9 +261,11 @@
                 
   <div class="section" id="the-master-equation">
 <h1>The Master equation<a class="headerlink" href="#the-master-equation" title="Permalink to this headline">¶</a></h1>
-<p>It has been very sucessfull to base stochastic descriptions of molecules and cellular processes on continous time Markov processes. These processes are memory-less and the most simple realization can be explaind with a two state system.</p>
-<p>Let’s consider a system that can be in two state: state <span class="math notranslate nohighlight">\((1)\)</span> and state <span class="math notranslate nohighlight">\((2)\)</span>. The system stochastically jumps between these two states.</p>
-<p>IMAGE</p>
+<p>It has been very successful to base stochastic descriptions of molecules and cellular processes on continuous time Markov processes. These processes are memory-less and the most simple realization can be explained with a two-state system.</p>
+<p>Let’s consider a system that can be in two states: state <span class="math notranslate nohighlight">\((1)\)</span> and state <span class="math notranslate nohighlight">\((2)\)</span>. The system stochastically jumps between these two states.</p>
+<div class="figure align-default" id="states">
+<a class="reference internal image-reference" href="../_images/2states.png"><img alt="../_images/2states.png" src="../_images/2states.png" style="height: 120px;" /></a>
+</div>
 <p>The jump process is described by two transition rates <span class="math notranslate nohighlight">\(k_{12}\)</span> and <span class="math notranslate nohighlight">\(k_{21}\)</span>, which can be determined in this simple example from the inverse mean waiting times in the states</p>
 <div class="math notranslate nohighlight">
 \[
@@ -250,7 +277,9 @@ k_{12} = \mean{t_1}^{-1}
 k_{12} dt
 \]</div>
 <p>Let’s assign time-dependent probabilities <span class="math notranslate nohighlight">\(P_1(t)\)</span> and <span class="math notranslate nohighlight">\(P_2(t)\)</span> to the states, respectively:</p>
-<p>IMAGES</p>
+<div class="figure align-default" id="statesp">
+<a class="reference internal image-reference" href="../_images/2statesP.png"><img alt="../_images/2statesP.png" src="../_images/2statesP.png" style="height: 100px;" /></a>
+</div>
 <p>Now, we consider a small time step <span class="math notranslate nohighlight">\(dt\)</span></p>
 <div class="math notranslate nohighlight">
 \[
@@ -279,6 +308,10 @@ P_1(t+dt) = P_1(t)(1 - k_{12}dt) + P_2(t) k_{21} dt
 \[
 J_{12} = k_{12}P_1
 \]</div>
+<p>An example:</p>
+<div class="figure align-default" id="ex">
+<a class="reference internal image-reference" href="../_images/ex.png"><img alt="../_images/ex.png" src="../_images/ex.png" style="height: 200px;" /></a>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

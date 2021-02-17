@@ -15,7 +15,7 @@ $$
 P(x,t+\Delta t) = q P(x-L,t) + (1-q) P(x+L,t)
 $$
 
-Let's assume that $\Delta t$ and $L$ are very small, than we can Taylor expand and determine the diffusion equation with drift
+Let's assume that $\Delta t$ and $L$ are very small then we can Taylor expand and determine the diffusion equation with drift
 
 $$
 \frac{\del p}{\del t} = -(2q-1)\frac{L}{\Delta t} \frac{\del p}{\del x} + \frac{L^2}{2 \Delta t} \frac{\del^2 p}{\del p^2}

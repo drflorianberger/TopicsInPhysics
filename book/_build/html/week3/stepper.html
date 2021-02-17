@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Stochastic Stepper &#8212; Physics of Fluctuations</title>
+    <title>Stochastic Stepper &#8212; Stochastic Physics of the Molecules of Life</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -60,7 +60,7 @@
   <img src="../_static/logo.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">Physics of Fluctuations</h1>
+  <h1 class="site-logo" id="site-title">Stochastic Physics of the Molecules of Life</h1>
   
 </a>
 </div>
@@ -80,23 +80,28 @@
 </ul>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../content.html">
-   Content in Jupyter Book
+  <a class="reference internal" href="../week1/week1.html">
+   Week 1: Introduction
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week1/week1.html">
-   Week 1
+  <a class="reference internal" href="../week1/ex_wk1.html">
+   Week 1: Exercises
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../week2/week2.html">
-   Week 2: Fluctuation of Ion Channels
+   Week 2: Fluctuations of Ion Channels
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../week2/ex_wk2.html">
    Week 2: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week2/paper.html">
+   Week 2: Paper
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -142,6 +147,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="paper.html">
+   Week 3: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week4/week4.html">
    Week 4: Long-range transport of intracellular cargos
   </a>
@@ -152,8 +162,23 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../week4/paper.html">
+   Week 4: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week5/week5.html">
    Week 5: Diffusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week5/paper.html">
+   Week 5: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../videos.html">
+   Videos of Talks
   </a>
  </li>
 </ul>
@@ -236,10 +261,6 @@
                 
   <div class="section" id="stochastic-stepper">
 <h1>Stochastic Stepper<a class="headerlink" href="#stochastic-stepper" title="Permalink to this headline">¶</a></h1>
-<div class="admonition-you-will-learn admonition">
-<p class="admonition-title">You will learn</p>
-<p>how to describe the dynamics of an stochastic stepper</p>
-</div>
 <p>We assume that a molecular motor steps along its tracks with a fixed step size <span class="math notranslate nohighlight">\(d\)</span>. However, between the consecutive steps the motor has to wait for an ATP molecule to bind, inducing a complex process of hydrolysis and molecular rearrangements. Therefore the time between the steps is a stochastic quantity. As a first approximation, we assume that this waiting time is exponentially distributed with rate <span class="math notranslate nohighlight">\(k\)</span> and the motor can only step forward. Our first question is: how many steps did the motor perform in a given time <span class="math notranslate nohighlight">\(t\)</span>. Because this number is different from realization to realization, we have to reformulate the question and ask:</p>
 <p>What is the probability <span class="math notranslate nohighlight">\(P_N(t)\)</span> that the motor performed <span class="math notranslate nohighlight">\(N\)</span> steps during the time <span class="math notranslate nohighlight">\(t\)</span>?</p>
 <div class="figure align-default" id="stepstates">
@@ -247,7 +268,7 @@
 </div>
 <p>This state diagram has the following master equation</p>
 <div class="math notranslate nohighlight" id="equation-eq-states">
-<span class="eqno">(4)<a class="headerlink" href="#equation-eq-states" title="Permalink to this equation">¶</a></span>\[\begin{split}
+<span class="eqno">(5)<a class="headerlink" href="#equation-eq-states" title="Permalink to this equation">¶</a></span>\[\begin{split}
 \frac{d}{dt} P_0 (t) &amp;= - k P_0 (t) \\
 \frac{d}{dt} P_j (t) &amp;= k P_{j-1} - k P_{j}  \quad \text{for } j&gt;0\\
 \end{split}\]</div>

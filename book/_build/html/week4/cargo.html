@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Cargo Transport by Multiple Motors &#8212; Physics of Fluctuations</title>
+    <title>Cargo Transport by Multiple Motors &#8212; Stochastic Physics of the Molecules of Life</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -60,7 +60,7 @@
   <img src="../_static/logo.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">Physics of Fluctuations</h1>
+  <h1 class="site-logo" id="site-title">Stochastic Physics of the Molecules of Life</h1>
   
 </a>
 </div>
@@ -80,23 +80,28 @@
 </ul>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../content.html">
-   Content in Jupyter Book
+  <a class="reference internal" href="../week1/week1.html">
+   Week 1: Introduction
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week1/week1.html">
-   Week 1
+  <a class="reference internal" href="../week1/ex_wk1.html">
+   Week 1: Exercises
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../week2/week2.html">
-   Week 2: Fluctuation of Ion Channels
+   Week 2: Fluctuations of Ion Channels
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../week2/ex_wk2.html">
    Week 2: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week2/paper.html">
+   Week 2: Paper
   </a>
  </li>
  <li class="toctree-l1">
@@ -107,6 +112,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../week3/ex_wk3.html">
    Week 3: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week3/paper.html">
+   Week 3: Paper
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -152,8 +162,23 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="paper.html">
+   Week 4: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week5/week5.html">
    Week 5: Diffusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week5/paper.html">
+   Week 5: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../videos.html">
+   Videos of Talks
   </a>
  </li>
 </ul>
@@ -262,14 +287,14 @@
 <div class="figure align-default" id="cargo2staterates">
 <a class="reference internal image-reference" href="../_images/cargo2motstatesRates.png"><img alt="../_images/cargo2motstatesRates.png" src="../_images/cargo2motstatesRates.png" style="height: 170px;" /></a>
 </div>
-<p>How are these rates related to the single motor rates? For simplicity we assume a load free case, <span class="math notranslate nohighlight">\(F=0\)</span>. Because the motors are independent and identical the rates add up. The effective rate for two unbound motors to bind is</p>
+<p>How are these rates related to the single motor rates? For simplicity, we assume a load-free case, <span class="math notranslate nohighlight">\(F=0\)</span>. Because the motors are independent and identical, the rates add up. The effective rate for two unbound motors to bind is</p>
 <div class="math notranslate nohighlight" id="equation-eq-r1">
-<span class="eqno">(7)<a class="headerlink" href="#equation-eq-r1" title="Permalink to this equation">¶</a></span>\[
+<span class="eqno">(8)<a class="headerlink" href="#equation-eq-r1" title="Permalink to this equation">¶</a></span>\[
 \pi_{0} = 2\pi,
 \]</div>
 <p>and the rate for two bound motors to unbind is</p>
 <div class="math notranslate nohighlight" id="equation-eq-r2">
-<span class="eqno">(8)<a class="headerlink" href="#equation-eq-r2" title="Permalink to this equation">¶</a></span>\[
+<span class="eqno">(9)<a class="headerlink" href="#equation-eq-r2" title="Permalink to this equation">¶</a></span>\[
 \e_{2} = 2\e.
 \]</div>
 <p>The master equation reads:</p>
@@ -287,7 +312,7 @@ P_1 &amp;= \frac{\pi_0 \e_2}{A}\\
 P_2 &amp;= \frac{\pi_0 \pi_1}{A}
 \end{split}\]</div>
 <p>with <span class="math notranslate nohighlight">\(A = \e_1 \e_2 + \pi_0 \e_2 + \pi_0 \pi_1 \)</span></p>
-<p>Using the definitions of the single-motor rates from equation <a class="reference internal" href="#equation-eq-r1">(7)</a> and <a class="reference internal" href="#equation-eq-r1">(7)</a>, we derive:</p>
+<p>Using the definitions of the single-motor rates from equation <a class="reference internal" href="#equation-eq-r1">(8)</a> and <a class="reference internal" href="#equation-eq-r1">(8)</a>, we derive:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 P_0 &amp;= \frac{\e^2}{a}\\
@@ -305,12 +330,12 @@ P_2 &amp;= \frac{\pi^2}{a}\\
 <div class="figure align-default" id="closed2mot">
 <a class="reference internal image-reference" href="../_images/closed2mot.png"><img alt="../_images/closed2mot.png" src="../_images/closed2mot.png" style="height: 70px;" /></a>
 </div>
-<p>The inverse prbability current <span class="math notranslate nohighlight">\(J\)</span> to go along this pathway is exactly the average time the motor is bound.</p>
+<p>The inverse probability current <span class="math notranslate nohighlight">\(J\)</span> to go along this pathway is the average time the motor is bound.</p>
 <div class="math notranslate nohighlight">
 \[
 J = \e S_1
 \]</div>
-<p><span class="math notranslate nohighlight">\(S_1\)</span> can be determined from the two state system as</p>
+<p><span class="math notranslate nohighlight">\(S_1\)</span> can be determined from the two-state system as</p>
 <div class="math notranslate nohighlight">
 \[
 S_1 = \frac{2\e}{ 2\e + \pi}
@@ -377,7 +402,7 @@ P_0 = \left(1+ \sum_{n=0}^{N-1} \prod_{i=0}^{n} \frac{\pi_i}{\e_{i+1}} \right)^{
 \[
 S = \frac{P_1}{1-P_0}
 \]</div>
-<p>Using this result we find the run length as</p>
+<p>Using this result, we find the run length as</p>
 <div class="math notranslate nohighlight">
 \[
 \mean{x} = v\mean{t} = v \e_{\rm{eff}}^{-1} = v \e S = \frac{v}{N\pi} \left( (1+\frac{\pi}{\e})^N - 1\right)

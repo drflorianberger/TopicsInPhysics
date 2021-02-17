@@ -30,7 +30,7 @@ $$
 P(x) = A e^{-\frac{\gamma E}{D}}
 $$
 
-Recall that it should be also possible to describe the distribution of the energies with the Boltzmann distribution and therefore we have the requirement that
+Recall that it should be possible to describe the distribution of the energies with the Boltzmann distribution and, therefore, we have the requirement that
 
 $$
 A e^{-\frac{\gamma E}{D}} = A e^{-\frac{E}{kT}}
@@ -56,7 +56,7 @@ $$
 kT = m \mean{v}^2
 $$
 
-With the kinetic energy $\frac{1}{2} m \mean{v}^2$ this equation implies that twice the kinetic energy must be $kT$. This is a very deep insight for equilibrium sytems and formally expressed in the equipartion theorem.
+With the kinetic energy $\frac{1}{2} m \mean{v}^2$ this equation implies that twice the kinetic energy must be $kT$. This realtion is a very deep insight for equilibrium systems and formally expressed in the equipartition theorem.
 
 A general form for a Hamiltonian (total energy) with $x_n$ degrees of freedom is given by
 
@@ -73,7 +73,7 @@ $$
 \mean{x \frac{\del H}{\del x}} = k \mean{x^2} = kT
 $$
 
-From this equation, we can estimate stiffnesses of a fluctuating protein attached to a wall.
+From this equation, we can estimate the stiffnesses of a fluctuating protein attached to a wall.
 
 ```{figure} fluct.png
 ---

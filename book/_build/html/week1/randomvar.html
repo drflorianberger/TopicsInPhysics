@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Random Variables &#8212; Physics of Fluctuations</title>
+    <title>Random Variables &#8212; Stochastic Physics of the Molecules of Life</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -60,7 +60,7 @@
   <img src="../_static/logo.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">Physics of Fluctuations</h1>
+  <h1 class="site-logo" id="site-title">Stochastic Physics of the Molecules of Life</h1>
   
 </a>
 </div>
@@ -79,14 +79,9 @@
  </li>
 </ul>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../content.html">
-   Content in Jupyter Book
-  </a>
- </li>
  <li class="toctree-l1 current active">
   <a class="reference internal" href="week1.html">
-   Week 1
+   Week 1: Introduction
   </a>
   <ul class="current">
    <li class="toctree-l2">
@@ -122,13 +117,23 @@
   </ul>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="ex_wk1.html">
+   Week 1: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week2/week2.html">
-   Week 2: Fluctuation of Ion Channels
+   Week 2: Fluctuations of Ion Channels
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../week2/ex_wk2.html">
    Week 2: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week2/paper.html">
+   Week 2: Paper
   </a>
  </li>
  <li class="toctree-l1">
@@ -142,6 +147,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../week3/paper.html">
+   Week 3: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week4/week4.html">
    Week 4: Long-range transport of intracellular cargos
   </a>
@@ -152,8 +162,23 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../week4/paper.html">
+   Week 4: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week5/week5.html">
    Week 5: Diffusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week5/paper.html">
+   Week 5: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../videos.html">
+   Videos of Talks
   </a>
  </li>
 </ul>
@@ -253,10 +278,10 @@
                 
   <div class="section" id="random-variables">
 <h1>Random Variables<a class="headerlink" href="#random-variables" title="Permalink to this headline">¶</a></h1>
-<p>We cannot predict the value of a random variable in the futur from the infromation that we have at the present. This is in contrast to a deterministic variable.</p>
-<p>However, we can make probabilistic statements about the futur.</p>
+<p>We cannot predict the value of a random variable in the future from the information that we have at the present.</p>
+<p>However, we can make probabilistic statements about the future.</p>
 <p>Example coin flipping:</p>
-<p>What is the probability P(H) to flip heads?</p>
+<p>What is the probability <span class="math notranslate nohighlight">\(P(H)\)</span> to flip heads?</p>
 <div class="math notranslate nohighlight">
 \[
 P(H) = \frac{\mbox{number of heads}}{\mbox{number of all flips}}
@@ -276,7 +301,7 @@ P(H) + P(T) = 1
 \[
 P(T) = 1-P(H)
 \]</div>
-<p>Let’s consider two independent events: two coins. What is the probability to flip both coins to heads</p>
+<p>Let’s consider two independent events: two coins. What is the probability of flipping both coins to heads</p>
 <div class="math notranslate nohighlight">
 \[
 P(H \mbox{ and } H) = P(H)P(H)
@@ -286,10 +311,10 @@ P(H \mbox{ and } H) = P(H)P(H)
 \[
 P(H) = \frac{\mbox{number of heads}}{\mbox{number of all flips}}.
 \]</div>
-<p>Is there a difference between tossing 100 coins at the same time and evaluate how many disply heads, and flipping one coin a 100 times?</p>
+<p>Is there a difference between tossing 100 coins at the same time and evaluate how many display heads, and flipping one coin a 100 times?</p>
 <div class="section" id="the-mean-value">
 <h2>The mean value<a class="headerlink" href="#the-mean-value" title="Permalink to this headline">¶</a></h2>
-<p>If we cannot predict the futur value of a random variable, maybe we can say something about the expected mean?</p>
+<p>If we cannot predict the future value of a random variable, maybe we can say something about the expected mean?</p>
 <p>Let’s consider a fair die. What is the probability to toss a <span class="math notranslate nohighlight">\(1\)</span>?</p>
 <div class="math notranslate nohighlight">
 \[
@@ -317,11 +342,13 @@ P(1)=\frac{1}{6}
 \[
 \mean{x} = \sum_{i=2}^5 i * \frac{1}{4} = 3.5
 \]</div>
-<p>Is there a way to distingues the two systems?</p>
+<p>Is there a way to distinguish the two systems?</p>
 </div>
 <div class="section" id="the-variance">
 <h2>The variance<a class="headerlink" href="#the-variance" title="Permalink to this headline">¶</a></h2>
-<p>IMAGE</p>
+<div class="figure align-default" id="width">
+<a class="reference internal image-reference" href="../_images/width.png"><img alt="../_images/width.png" src="../_images/width.png" style="height: 170px;" /></a>
+</div>
 <p>The variance is the mean squared distance from the mean:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -332,7 +359,7 @@ P(1)=\frac{1}{6}
 \[
 \sigma^2 = \sum_i^6 i^2 \frac{1}{6} - 3.5^2 = 2.9
 \]</div>
-<p>and for the 4 faces die, we obtain</p>
+<p>and for the 4-faces die, we obtain</p>
 <div class="math notranslate nohighlight">
 \[
 \sigma^2 = \sum_{i=2}^5 i^2 \frac{1}{4} - 3.5^2 = 1.25
@@ -340,13 +367,16 @@ P(1)=\frac{1}{6}
 </div>
 <div class="section" id="continuous-random-variable">
 <h2>Continuous random variable<a class="headerlink" href="#continuous-random-variable" title="Permalink to this headline">¶</a></h2>
-<p>A continuous random variable can have infinitely many values. Let’s describe the random variable with <span class="math notranslate nohighlight">\(X\)</span> and it’s value with <span class="math notranslate nohighlight">\(x\)</span>. Counting is not that stright forward compared to a discrete random number. Therefore, we need to introduce the concept of a probability density function <span class="math notranslate nohighlight">\(p(X)\)</span>. Now, we can define the probability of <span class="math notranslate nohighlight">\(X\)</span> taking a value between <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(x+dx\)</span>:</p>
+<p>A continuous random variable can have infinitely many values. Let’s describe the random variable with <span class="math notranslate nohighlight">\(X\)</span> and its value with <span class="math notranslate nohighlight">\(x\)</span>. Counting is not that straightforward compared to a discrete random number. Therefore, we need to introduce the concept of a probability density function <span class="math notranslate nohighlight">\(p(X)\)</span>. Now, we can define the probability of <span class="math notranslate nohighlight">\(X\)</span> taking a value between <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(x+dx\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 P(x \le X \le x + dx) = p(x)dx
 \]</div>
-<p>Let’s consider <span class="math notranslate nohighlight">\(M\)</span> identical system that have the random variable <span class="math notranslate nohighlight">\(X\)</span> as an output, which can have values between <span class="math notranslate nohighlight">\(1\)</span> and <span class="math notranslate nohighlight">\(10\)</span>. If <span class="math notranslate nohighlight">\(M\)</span> is large I have a long list of <span class="math notranslate nohighlight">\(M\)</span> different values between <span class="math notranslate nohighlight">\(1\)</span> and <span class="math notranslate nohighlight">\(10\)</span>. To determine the probability density function, I construct a histogram and count how many systems’ output are in each box with bin width <span class="math notranslate nohighlight">\(dx\)</span>.</p>
-<p>Formaly, the probability density function is then given by</p>
+<p>Let’s consider <span class="math notranslate nohighlight">\(M\)</span> identical systems that have the random variable <span class="math notranslate nohighlight">\(X\)</span> as an output, which can have values between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(10\)</span>. Now, I have a list of <span class="math notranslate nohighlight">\(M\)</span> different values between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(10\)</span>. To determine the probability density function, I construct a histogram and count how many systems’ outputs fall into each box with bin width <span class="math notranslate nohighlight">\(dx\)</span>.</p>
+<div class="figure align-default" id="histo">
+<a class="reference internal image-reference" href="../_images/histo.png"><img alt="../_images/histo.png" src="../_images/histo.png" style="height: 350px;" /></a>
+</div>
+<p>Formally, the probability density function is then given by</p>
 <div class="math notranslate nohighlight">
 \[
 p(x) = \lim_{M \to \infty, dx \to 0} \frac{\mbox{number of systems with } x \le X \le x + dx}{M dx}

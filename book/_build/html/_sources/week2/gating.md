@@ -1,8 +1,6 @@
 # Gating of Ion Channels
 
-```{admonition} You will learn
-The concept of gating
-```
+
 The opening and closing of ion channels can be induced by different stimuli. This mechanism is called gating. Ion channels can be categorized depending on their gating mechanism:
 - Voltage-gated channels
 - Tension-gated channels
@@ -49,7 +47,7 @@ name: bol
 ---
 ```
 
-In experiments the voltage is changed instantaneously with a step. We expect from EQ that there is a transient behavior of the open probability and therefore it depends on time and voltage:
+In experiments, the voltage is changed instantaneously with a step. We expect from EQ that there is a transient behavior of the open probability and, therefore, it depends on time and voltage:
 
 $$
 \Po = \Po(V,t).

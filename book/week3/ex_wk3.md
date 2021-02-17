@@ -1,13 +1,13 @@
 Week 3: Exercises
 =======================
  
-1. Show that the solution 
+3.1) Show that the solution 
 
 $$
 P_j(t) = \frac{(k t)^j}{j!} e^{-kt}
 $$ (eq:solution)
 
-for the poisson stepper is a solution for the following master equation
+for the Poisson stepper is a solution for the following master equation
 
 $$
 \frac{d}{dt} P_0 (t) &= - k P_0 (t) \\
@@ -15,21 +15,35 @@ $$
 $$ (eq:states)
 
 Show that the solution {eq}`eq:solution` is normalized.
-
-2. Use Taylor's theorem to show that
+<br />
+<br />
+3.2) Use Taylor's theorem to show that
 
 $$
 e^{kt} = \sum_{n=0}^{\infty}  \frac{(k t)^{n}}{n!}
 $$
 
-3. Derive the variance $\mean{(x-\mean{x})^2}$ for a poisson stepper with step size $d$,
+<br />
+<br />
+
+3.3) Derive the variance $\mean{(x-\mean{x})^2}$ for a poisson stepper with step size $d$,
 
 $$
 x(t) = d N(t)
 $$
 
-4. Consider a two-step Markov process on the following network:
-IMAGE$
+<br />
+<br />
+
+3.4) Consider a Markov process on the following network:
+
+```{figure} ex1.png
+---
+height: 70px
+name: 2ss
+---
+```
+
 The process starts in state $(0)$. The distribution of arrival times into the absorbing state $(2)$ is given by 
 
 $$

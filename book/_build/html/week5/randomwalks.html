@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Random Walks &#8212; Physics of Fluctuations</title>
+    <title>Random Walks &#8212; Stochastic Physics of the Molecules of Life</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -60,7 +60,7 @@
   <img src="../_static/logo.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">Physics of Fluctuations</h1>
+  <h1 class="site-logo" id="site-title">Stochastic Physics of the Molecules of Life</h1>
   
 </a>
 </div>
@@ -80,23 +80,28 @@
 </ul>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../content.html">
-   Content in Jupyter Book
+  <a class="reference internal" href="../week1/week1.html">
+   Week 1: Introduction
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week1/week1.html">
-   Week 1
+  <a class="reference internal" href="../week1/ex_wk1.html">
+   Week 1: Exercises
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../week2/week2.html">
-   Week 2: Fluctuation of Ion Channels
+   Week 2: Fluctuations of Ion Channels
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../week2/ex_wk2.html">
    Week 2: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week2/paper.html">
+   Week 2: Paper
   </a>
  </li>
  <li class="toctree-l1">
@@ -110,6 +115,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../week3/paper.html">
+   Week 3: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week4/week4.html">
    Week 4: Long-range transport of intracellular cargos
   </a>
@@ -117,6 +127,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../week4/ex_wk4.html">
    Week 4: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week4/paper.html">
+   Week 4: Paper
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -155,6 +170,16 @@
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="paper.html">
+   Week 5: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../videos.html">
+   Videos of Talks
+  </a>
  </li>
 </ul>
 
@@ -243,16 +268,16 @@
                 
   <div class="section" id="random-walks">
 <h1>Random Walks<a class="headerlink" href="#random-walks" title="Permalink to this headline">¶</a></h1>
-<p>Random walks are emergent behavior of paths that take successive steps in random directions. The precise nature of the microscopic steping dynamics is not relevant and random walks can be used to describe a large class of different systems.</p>
+<p>Random walks are emergent behavior of paths that take successive steps in random directions. The precise nature of the microscopic stepping dynamics is not relevant and random walks can be used to describe a large class of different systems.</p>
 <div class="section" id="random-unit-stepper">
 <h2>Random unit stepper<a class="headerlink" href="#random-unit-stepper" title="Permalink to this headline">¶</a></h2>
-<p>Consider a steper that steps with equal probability into the plus direction and into the minus direction, such that the step <span class="math notranslate nohighlight">\(l = \pm 1\)</span>.</p>
+<p>Consider a stepper that steps with equal probability into the plus direction and into the minus direction, such that the step <span class="math notranslate nohighlight">\(l = \pm 1\)</span>.</p>
 <p>What is the sum of steps after <span class="math notranslate nohighlight">\(N\)</span> steps?</p>
 <div class="math notranslate nohighlight">
 \[
 s_N = \sum_{i=1}^N l_i
 \]</div>
-<p>For <span class="math notranslate nohighlight">\(N&gt;1\)</span>, we expect <span class="math notranslate nohighlight">\(s_N = 0\)</span> and on average <span class="math notranslate nohighlight">\(\mean{s_N} = 0\)</span>. Thus, the average is not a good characterisitc measure. Therefore, we will consider the mean squared distance</p>
+<p>For <span class="math notranslate nohighlight">\(N&gt;1\)</span>, we expect <span class="math notranslate nohighlight">\(s_N = 0\)</span> and on average <span class="math notranslate nohighlight">\(\mean{s_N} = 0\)</span>. Thus, the average is not a good characteristic measure. Therefore, we will consider the mean squared distance</p>
 <div class="math notranslate nohighlight">
 \[
 \mean{s_N^2}
@@ -289,7 +314,7 @@ s_N = \sum_{i=1}^N l_i
 \[
 \sigma_s^2 = \mean{s^2_N} = L^2 N
 \]</div>
-<p>If we introduce the total time <span class="math notranslate nohighlight">\(t\)</span> and the stepping rate <span class="math notranslate nohighlight">\(1/\Delta t\)</span>, we can rewrite this equaiton to</p>
+<p>If we introduce the total time <span class="math notranslate nohighlight">\(t\)</span> and the stepping rate <span class="math notranslate nohighlight">\(1/\Delta t\)</span>, we can rewrite this equation to</p>
 <div class="math notranslate nohighlight">
 \[
 \mean{s^2} = \frac{L^2}{\Delta t} t

@@ -30,7 +30,7 @@ name: cargo2staterates
 ---
 ```
 
-How are these rates related to the single motor rates? For simplicity we assume a load free case, $F=0$. Because the motors are independent and identical the rates add up. The effective rate for two unbound motors to bind is
+How are these rates related to the single motor rates? For simplicity, we assume a load-free case, $F=0$. Because the motors are independent and identical, the rates add up. The effective rate for two unbound motors to bind is
 
 $$
 \pi_{0} = 2\pi,
@@ -92,13 +92,13 @@ name: closed2mot
 ---
 ```
 
-The inverse prbability current $J$ to go along this pathway is exactly the average time the motor is bound.
+The inverse probability current $J$ to go along this pathway is the average time the motor is bound.
 
 $$
 J = \e S_1
 $$
 
-$S_1$ can be determined from the two state system as
+$S_1$ can be determined from the two-state system as
 
 $$
 S_1 = \frac{2\e}{ 2\e + \pi}
@@ -186,7 +186,7 @@ $$
 S = \frac{P_1}{1-P_0}
 $$
 
-Using this result we find the run length as
+Using this result, we find the run length as
 
 $$
 \mean{x} = v\mean{t} = v \e_{\rm{eff}}^{-1} = v \e S = \frac{v}{N\pi} \left( (1+\frac{\pi}{\e})^N - 1\right)

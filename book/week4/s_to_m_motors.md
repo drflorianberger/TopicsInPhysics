@@ -7,7 +7,7 @@ What motors can do:
 - Bind to a filament (binding rate)
 - Unbinding from a filament (unbinding rate)
 
-In principle this can depend on several quantities:
+In principle, this can depend on several quantities:
 - Fule (free energy, ATP)
 - Force
 
@@ -16,7 +16,7 @@ The force-dependent behavior of single molecular motors has been studied with op
 
 ### Force-velocity relation
 
-The velocity of motor decreases with an oposing force
+The velocity of a motor decreases with an opposing force
 
 ```{figure} forcevelo.png
 ---
@@ -27,11 +27,11 @@ name: forcevelo
 
 
 - Force-free velocity $v_0$
-- Stall force $\Fs$
+- The Stall force $\Fs$
 
 ### Binding and unbinding
 
-Binding process is complicated but we assume to effectively describe it with a single rate
+The binding process is complicated. As an approximation, we effectively describe it with a single rate
 
 $$
 \pi

@@ -26,7 +26,7 @@ $$
 P(x,t+\Delta t) = 1/2 P(x-L,t) + 1/2 P(x+L,t)
 $$
 
-Let's assume that $\Delta t$ and $L$ are very small, then we can Taylor expand to
+Let's assume that $\Delta t$ and $L$ are very small then we can Taylor expand to
 
 $$
 P + \Delta t \frac{\del P}{\del t} = \frac{1}{2} (P - \Delta L \frac{\del P}{\del x} + \frac{1}{2} L^2 \frac{\del^2 P}{\del x^2}) + \frac{1}{2}(P + L \frac{\del P}{\del x} + \frac{1}{2} L^2 \frac{\del^2 P}{\del x^2})

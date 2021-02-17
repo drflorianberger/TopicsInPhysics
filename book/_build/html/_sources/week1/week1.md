@@ -1,6 +1,6 @@
-Week 1
+Week 1: Introduction
 =======================
 
-In the first week we will introduce all the tools we need to study the physics of fluctuations.
+In the first week, we will introduce all the tools we need to study the physics of fluctuations. 
 
-Average of product of two independen random variables
+After this week, you are well prepared to understand what fluctuations can teach us about molecular mechanisms. 

@@ -45,5 +45,4 @@ $$
 \int_{-\infty}^{+\infty} e^{-x^2} dx = \sqrt{\pi}
 $$
 
-An set of basic calculus videos can be found here:
-https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr
+If you need to catch up on math, you can find a set of calculus videos here: [Calculus Videos](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)

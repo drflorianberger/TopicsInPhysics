@@ -56,5 +56,6 @@ Possible explanation:
 
 - Negative interference between the motors
 
-Experimental study: https://doi.org/10.1039/B900964G
-Theoretical study: https://doi.org/10.1103/PhysRevLett.108.208101
+[Experimental study](https://doi.org/10.1039/B900964G)
+
+[Theoretical study](https://doi.org/10.1103/PhysRevLett.108.208101)

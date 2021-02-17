@@ -13,7 +13,7 @@
 - Antidisciplinary!
 - The disinterested pursuit of an understanding of nature.
 - What is life? We are not looking for a new kind of force!
-- We are studyig this mysterious condition under which physical forces cause material to self-organize to living systems.
+- We are studying this mysterious condition under which physical forces cause material to self-organize to living systems.
 
 
 ### The Past
@@ -44,4 +44,4 @@ Key contributions:
 - Predictions (correlations vs. causality)
 - Alpha fold
 
-gg7WjuFs8F4
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gg7WjuFs8F4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Seperating Electrical Charges &#8212; Physics of Fluctuations</title>
+    <title>Seperating Electrical Charges &#8212; Stochastic Physics of the Molecules of Life</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -38,7 +38,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="The Current Through Ion Channels" href="current.html" />
-    <link rel="prev" title="Week 2: Fluctuation of Ion Channels" href="week2.html" />
+    <link rel="prev" title="Week 2: Fluctuations of Ion Channels" href="week2.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -60,7 +60,7 @@
   <img src="../_static/logo.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">Physics of Fluctuations</h1>
+  <h1 class="site-logo" id="site-title">Stochastic Physics of the Molecules of Life</h1>
   
 </a>
 </div>
@@ -80,18 +80,18 @@
 </ul>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../content.html">
-   Content in Jupyter Book
+  <a class="reference internal" href="../week1/week1.html">
+   Week 1: Introduction
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week1/week1.html">
-   Week 1
+  <a class="reference internal" href="../week1/ex_wk1.html">
+   Week 1: Exercises
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="reference internal" href="week2.html">
-   Week 2: Fluctuation of Ion Channels
+   Week 2: Fluctuations of Ion Channels
   </a>
   <ul class="current">
    <li class="toctree-l2 current active">
@@ -137,6 +137,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="paper.html">
+   Week 2: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week3/week3.html">
    Week 3: Fluctuation of Molecular Motors
   </a>
@@ -144,6 +149,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../week3/ex_wk3.html">
    Week 3: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week3/paper.html">
+   Week 3: Paper
   </a>
  </li>
  <li class="toctree-l1">
@@ -157,8 +167,23 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../week4/paper.html">
+   Week 4: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week5/week5.html">
    Week 5: Diffusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week5/paper.html">
+   Week 5: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../videos.html">
+   Videos of Talks
   </a>
  </li>
 </ul>
@@ -237,18 +262,13 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-basics-of-seperating-charges">
-   The basics of seperating charges
+  <a class="reference internal nav-link" href="#the-basics-of-separating-charges">
+   The basics of separating charges
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#extra-the-nernst-equation">
    EXTRA: The Nernst Equation
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#key-concepts">
-   Key Concepts
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -268,86 +288,75 @@
                 
   <div class="section" id="seperating-electrical-charges">
 <h1>Seperating Electrical Charges<a class="headerlink" href="#seperating-electrical-charges" title="Permalink to this headline">¶</a></h1>
-<div class="admonition-you-will-learn admonition">
-<p class="admonition-title">You will learn</p>
-<p>How ion channels can seperate charges betweeen compartments</p>
-</div>
 <div class="section" id="separating-charges-is-fundamental-for-neural-communication">
 <h2>Separating charges is fundamental for neural communication<a class="headerlink" href="#separating-charges-is-fundamental-for-neural-communication" title="Permalink to this headline">¶</a></h2>
-<p>Cells seperate ions between compartments to store energy and information. These compartments are seperated by membranes with a protein machinery of pumps and channels. These pumps and channels regulate the trans-membrane ion flow, keep charge imbalances from equilibrating and thus generate and maintaine a voltage potential across the membrane. This membrane potential can be altered by chemical, electrical, or mechanical stimulation and the resulting disturbance can progagate along the cell membrane as action potentials. Action potentials are fundamental for neural communcation and travel at a rate of <span class="math notranslate nohighlight">\(10-100\, \rm{m/s}\)</span>.</p>
+<p>Cells separate ions between compartments to store energy and information. These compartments are separated by membranes with a protein machinery of pumps and channels. These pumps and channels regulate the trans-membrane ion flow, keep charge imbalances from equilibrating and thus generate and maintain a voltage potential across the membrane. This membrane potential can be altered by chemical, electrical, or mechanical stimulation and the resulting disturbance can propagate along the cell membrane as action potentials. Action potentials are fundamental for neural communication and travel at a rate of <span class="math notranslate nohighlight">\(10-100\, \rm{m/s}\)</span>.</p>
 </div>
-<div class="section" id="the-basics-of-seperating-charges">
-<span id="sec-sep"></span><h2>The basics of seperating charges<a class="headerlink" href="#the-basics-of-seperating-charges" title="Permalink to this headline">¶</a></h2>
-<p>Imagen you have two containers, one filled with particles and the other one empty. The containers are connected by a channel which is initially blocked.</p>
+<div class="section" id="the-basics-of-separating-charges">
+<span id="sec-sep"></span><h2>The basics of separating charges<a class="headerlink" href="#the-basics-of-separating-charges" title="Permalink to this headline">¶</a></h2>
+<p>Imagine you have two containers, one filled with particles and the other one empty. The containers are connected by a channel, which is initially blocked.</p>
 <div class="figure align-default" id="sc1">
 <a class="reference internal image-reference" href="../_images/sc1.png"><img alt="../_images/sc1.png" src="../_images/sc1.png" style="height: 150px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Particles are in the left container and the channel is blocked.</span><a class="headerlink" href="#sc1" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Particles are in the left container and the channel is blocked.</span><a class="headerlink" href="#sc1" title="Permalink to this image">¶</a></p>
 </div>
-<p>How does the eqilibrated system looks like after we open the channel and let the system relax to its equilibrium state? Click below right to see the answer.</p>
+<p>How does the equilibrated system looks like after we open the channel and let the system relax to its equilibrium state? Click below right to see the answer.</p>
 <div class="toggle docutils container">
-<p>In the initial system there is a concentration gradient: high concentration in the left container and low concentration in the right container. Diffusion will reduce the concentration gradient untill the concentration is the same in both containers.</p>
+<p>In the initial system, there is a concentration gradient: high concentration in the left container and low concentration in the right container. Diffusion will reduce the concentration gradient until the concentration is the same in both containers.</p>
 <div class="figure align-default" id="sc1u">
 <a class="reference internal image-reference" href="../_images/sc1u.png"><img alt="../_images/sc1u.png" src="../_images/sc1u.png" style="height: 150px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">After opening the channel the system reaches the equilibrium state without an concentration gradient.</span><a class="headerlink" href="#sc1u" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">After opening the channel, the system reaches the equilibrium state without a concentration gradient.</span><a class="headerlink" href="#sc1u" title="Permalink to this image">¶</a></p>
 </div>
 </div>
-<p>Imagen you have two containers filled with the same number of particles, but opositely charged in each containter. The containers are connected by a channel which is initially blocked.</p>
+<p>Imagine you have two containers filled with the same number of particles but oppositely charged in each container. The containers are connected by a channel, which is initially blocked.</p>
 <div class="figure align-default" id="sc2">
 <a class="reference internal image-reference" href="../_images/sc2.png"><img alt="../_images/sc2.png" src="../_images/sc2.png" style="height: 150px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Opposietly charged particles are in the seperate containers.</span><a class="headerlink" href="#sc2" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Oppositely charged particles are in the separated containers.</span><a class="headerlink" href="#sc2" title="Permalink to this image">¶</a></p>
 </div>
-<p>How does the eqilibrated system looks like after we open the channel and let the system relax to its equilibrium state? Click below right to see the answer.</p>
+<p>How does the equilibrated system looks like after we open the channel and let the system relax to its equilibrium state? Click below right to see the answer.</p>
 <div class="toggle docutils container">
-<p>In the initial system there is an electrical gradient: negatevly charged particles in the left container and positively charged particles in the right container, creating an electrical potential between the containers. Particles will rearange in such a way that electrical potential is neutralized.</p>
+<p>In the initial system, there is an electrical gradient: negatively charged particles in the left container and positively charged particles in the right container, creating an electrical potential between the containers. Particles will rearrange in such a way that electrical potential is neutralized.</p>
 <div class="figure align-default" id="sc2u">
 <a class="reference internal image-reference" href="../_images/sc2u.png"><img alt="../_images/sc2u.png" src="../_images/sc2u.png" style="height: 150px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">After opening the channel the electrical gradient is neutralized by mixing of the particles.</span><a class="headerlink" href="#sc2u" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">After opening the channel, the electrical gradient is neutralized by mixing of the particles.</span><a class="headerlink" href="#sc2u" title="Permalink to this image">¶</a></p>
 </div>
 </div>
-<p>If in equilibrium, concentration and electrical gradients are canceled out, how can we establish an electrical potential? Nature uses specific channels. These channels olny allow specific particles to go through their pores. Let’s see how that works!</p>
-<p>Imagen, we have a channel that is specific for the blue particles. Now, we consider the following system</p>
+<p>If in equilibrium, concentration and electrical gradients are canceled out, how can we establish an electrical potential? Nature uses specific channels. These channels only allow specific particles to go through their pores. Let’s see how that works!</p>
+<p>Imagine, we have a channel that is specific for the blue particles. Now, we consider the following system</p>
 <div class="figure align-default" id="sc3">
 <a class="reference internal image-reference" href="../_images/sc3.png"><img alt="../_images/sc3.png" src="../_images/sc3.png" style="height: 150px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Particle are initally in the right container.</span><a class="headerlink" href="#sc3" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">Particle are initally in the right container.</span><a class="headerlink" href="#sc3" title="Permalink to this image">¶</a></p>
 </div>
 <p>What happens if we open the channel?</p>
 <div class="toggle docutils container">
-<p>The concentration gradient will disapear!</p>
+<p>The concentration gradient will disappear!</p>
 <div class="figure align-default" id="sc3u">
 <a class="reference internal image-reference" href="../_images/sc3u.png"><img alt="../_images/sc3u.png" src="../_images/sc3u.png" style="height: 150px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Particles distribute equally in both containers.</span><a class="headerlink" href="#sc3u" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">Particles distribute equally in both containers.</span><a class="headerlink" href="#sc3u" title="Permalink to this image">¶</a></p>
 </div>
 </div>
-<p>Imagen, we have an intially electrical neutral system with negatively and positively charged particles in the left container. Now, the channel is specific for the blue particles and only let them through to the other container.</p>
+<p>Imagen, we have an initially electrical neutral system with negatively and positively charged particles in the left container. Now, the channel is specific for the blue particles and only lets them through to the other container.</p>
 <div class="figure align-default" id="sc4">
 <a class="reference internal image-reference" href="../_images/sc4.png"><img alt="../_images/sc4.png" src="../_images/sc4.png" style="height: 150px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Initally electrical neutral system with plus and minus ions in the left container.</span><a class="headerlink" href="#sc4" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Initially, the system is electrically neutral with plus and minus ions in the left container.</span><a class="headerlink" href="#sc4" title="Permalink to this image">¶</a></p>
 </div>
 <p>What happens if we open the channel?</p>
 <div class="toggle docutils container">
 <p>The blue particles with diffuse to the empty container in order to reduce the concentration gradient, but at the same time they will generate an electrical potential because they carry a negative charge. The system will find a compromise between the concentration gradient and the electrical gradient and a voltage potential is generated between the containers.</p>
 <div class="figure align-default" id="sc4u">
 <a class="reference internal image-reference" href="../_images/sc4u.png"><img alt="../_images/sc4u.png" src="../_images/sc4u.png" style="height: 150px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Because only the blue particles can go through the channel, some of them will diffuse to the empty container to reduce the concentration gradient. In they way they seperate from the positively charged ions and a electrical potential is generated.</span><a class="headerlink" href="#sc4u" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">Because only the blue particles can go through the channel, some of them will diffuse to the empty container to reduce the concentration gradient. In this way, they separate from the positively charged ions and an electrical potential is generated.</span><a class="headerlink" href="#sc4u" title="Permalink to this image">¶</a></p>
 </div>
 </div>
-<p>With ion-specific channels and different ion concentrations, a membrane potential can be established even in thermodynamic equilibrium. This potential is the Nernst potential, also called the equilbirum potential. Typical values are on the order of <span class="math notranslate nohighlight">\(-60 \rm{mV}\)</span>.</p>
+<p>With ion-specific channels and different ion concentrations, a membrane potential can be established even in thermodynamic equilibrium. This potential is the Nernst potential, also called the equilibrium potential. Typical values are on the order of <span class="math notranslate nohighlight">\(-60 \rm{mV}\)</span>.</p>
 </div>
 <div class="section" id="extra-the-nernst-equation">
 <h2>EXTRA: The Nernst Equation<a class="headerlink" href="#extra-the-nernst-equation" title="Permalink to this headline">¶</a></h2>
-<p>The Nerst potential can be derived from thermodynamical considerations and is given by:</p>
+<p>The Nernst potential can be derived from thermodynamical considerations and is given by:</p>
 <div class="math notranslate nohighlight">
 \[
 V_{\rm{eq}} = \frac{RT}{z F}\log\frac{[C]_{\rm{out}}}{[C]_{\rm{in}}},
 \]</div>
 <p>in which RT is the universal gas constant times the temperature, z is the valence of the ionic species, F is Faraday’s constant, and <span class="math notranslate nohighlight">\([C]_{\rm{out}}\)</span>, <span class="math notranslate nohighlight">\([C]_{\rm{in}}\)</span> are the concentration of the ion outside and inside, respectively.</p>
-</div>
-<div class="section" id="key-concepts">
-<h2>Key Concepts<a class="headerlink" href="#key-concepts" title="Permalink to this headline">¶</a></h2>
-<div class="admonition-now-you-should-know admonition">
-<p class="admonition-title">Now, you should know</p>
-<p>How an elctrical potential can be generated between compartments and why ion channels must be specifc and cannot be just holes in the seperating membrane.</p>
-</div>
 </div>
 <div class="section" id="additional-material">
 <h2>Additional material<a class="headerlink" href="#additional-material" title="Permalink to this headline">¶</a></h2>
@@ -383,7 +392,7 @@ V_{\rm{eq}} = \frac{RT}{z F}\log\frac{[C]_{\rm{out}}}{[C]_{\rm{in}}},
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="week2.html" title="previous page">Week 2: Fluctuation of Ion Channels</a>
+    <a class='left-prev' id="prev-link" href="week2.html" title="previous page">Week 2: Fluctuations of Ion Channels</a>
     <a class='right-next' id="next-link" href="current.html" title="next page">The Current Through Ion Channels</a>
 
     </div>

@@ -1,10 +1,15 @@
 # The Master equation
 
-It has been very sucessfull to base stochastic descriptions of molecules and cellular processes on continous time Markov processes. These processes are memory-less and the most simple realization can be explaind with a two state system.
+It has been very successful to base stochastic descriptions of molecules and cellular processes on continuous time Markov processes. These processes are memory-less and the most simple realization can be explained with a two-state system.
 
-Let's consider a system that can be in two state: state $(1)$ and state $(2)$. The system stochastically jumps between these two states.
+Let's consider a system that can be in two states: state $(1)$ and state $(2)$. The system stochastically jumps between these two states.
 
-IMAGE
+```{figure} 2states.png
+---
+height: 120px
+name: 2states
+---
+```
 
 The jump process is described by two transition rates $k_{12}$ and $k_{21}$, which can be determined in this simple example from the inverse mean waiting times in the states
 
@@ -20,8 +25,12 @@ $$
 
 Let's assign time-dependent probabilities $P_1(t)$ and $P_2(t)$ to the states, respectively:
 
-IMAGES
-
+```{figure} 2statesP.png
+---
+height: 100px
+name: 2statesP
+---
+```
 
 Now, we consider a small time step $dt$
 
@@ -54,3 +63,12 @@ An important quantity is the probability current that represents the mean number
 $$
 J_{12} = k_{12}P_1
 $$
+
+An example:
+
+```{figure} ex.png
+---
+height: 200px
+name: ex
+---
+```

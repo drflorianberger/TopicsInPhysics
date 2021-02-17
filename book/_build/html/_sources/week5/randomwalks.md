@@ -1,10 +1,10 @@
 # Random Walks
 
-Random walks are emergent behavior of paths that take successive steps in random directions. The precise nature of the microscopic steping dynamics is not relevant and random walks can be used to describe a large class of different systems.
+Random walks are emergent behavior of paths that take successive steps in random directions. The precise nature of the microscopic stepping dynamics is not relevant and random walks can be used to describe a large class of different systems.
 
 ### Random unit stepper
 
-Consider a steper that steps with equal probability into the plus direction and into the minus direction, such that the step $l = \pm 1$.
+Consider a stepper that steps with equal probability into the plus direction and into the minus direction, such that the step $l = \pm 1$.
 
 What is the sum of steps after $N$ steps?
 
@@ -12,7 +12,7 @@ $$
 s_N = \sum_{i=1}^N l_i
 $$
 
-For $N>1$, we expect $s_N = 0$ and on average $\mean{s_N} = 0$. Thus, the average is not a good characterisitc measure. Therefore, we will consider the mean squared distance
+For $N>1$, we expect $s_N = 0$ and on average $\mean{s_N} = 0$. Thus, the average is not a good characteristic measure. Therefore, we will consider the mean squared distance
 
 $$
 \mean{s_N^2}
@@ -62,7 +62,7 @@ $$
 \sigma_s^2 = \mean{s^2_N} = L^2 N
 $$
 
-If we introduce the total time $t$ and the stepping rate $1/\Delta t$, we can rewrite this equaiton to
+If we introduce the total time $t$ and the stepping rate $1/\Delta t$, we can rewrite this equation to
 
 $$
 \mean{s^2} = \frac{L^2}{\Delta t} t

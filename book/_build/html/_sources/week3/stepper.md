@@ -1,8 +1,6 @@
 # Stochastic Stepper
 
-```{admonition} You will learn
-how to describe the dynamics of an stochastic stepper
-```
+
 We assume that a molecular motor steps along its tracks with a fixed step size $d$. However, between the consecutive steps the motor has to wait for an ATP molecule to bind, inducing a complex process of hydrolysis and molecular rearrangements. Therefore the time between the steps is a stochastic quantity. As a first approximation, we assume that this waiting time is exponentially distributed with rate $k$ and the motor can only step forward. Our first question is: how many steps did the motor perform in a given time $t$. Because this number is different from realization to realization, we have to reformulate the question and ask:
 
 What is the probability $P_N(t)$ that the motor performed $N$ steps during the time $t$?

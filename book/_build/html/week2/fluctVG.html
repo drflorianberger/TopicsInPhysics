@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Fluctuation analysis of voltage-gated ion channels &#8212; Physics of Fluctuations</title>
+    <title>Fluctuation analysis of voltage-gated ion channels &#8212; Stochastic Physics of the Molecules of Life</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -60,7 +60,7 @@
   <img src="../_static/logo.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">Physics of Fluctuations</h1>
+  <h1 class="site-logo" id="site-title">Stochastic Physics of the Molecules of Life</h1>
   
 </a>
 </div>
@@ -80,18 +80,18 @@
 </ul>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../content.html">
-   Content in Jupyter Book
+  <a class="reference internal" href="../week1/week1.html">
+   Week 1: Introduction
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week1/week1.html">
-   Week 1
+  <a class="reference internal" href="../week1/ex_wk1.html">
+   Week 1: Exercises
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="reference internal" href="week2.html">
-   Week 2: Fluctuation of Ion Channels
+   Week 2: Fluctuations of Ion Channels
   </a>
   <ul class="current">
    <li class="toctree-l2">
@@ -137,6 +137,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="paper.html">
+   Week 2: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week3/week3.html">
    Week 3: Fluctuation of Molecular Motors
   </a>
@@ -144,6 +149,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../week3/ex_wk3.html">
    Week 3: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week3/paper.html">
+   Week 3: Paper
   </a>
  </li>
  <li class="toctree-l1">
@@ -157,8 +167,23 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../week4/paper.html">
+   Week 4: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week5/week5.html">
    Week 5: Diffusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week5/paper.html">
+   Week 5: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../videos.html">
+   Videos of Talks
   </a>
  </li>
 </ul>
@@ -241,16 +266,12 @@
                 
   <div class="section" id="fluctuation-analysis-of-voltage-gated-ion-channels">
 <h1>Fluctuation analysis of voltage-gated ion channels<a class="headerlink" href="#fluctuation-analysis-of-voltage-gated-ion-channels" title="Permalink to this headline">¶</a></h1>
-<div class="admonition-you-will-learn admonition">
-<p class="admonition-title">You will learn</p>
-<p>How to use fluctuation analysis on voltage-gated ion channels.</p>
-</div>
-<p>Considering our main result,</p>
+<p>Consider our main result,</p>
 <div class="math notranslate nohighlight" id="equation-eq-mr">
-<span class="eqno">(3)<a class="headerlink" href="#equation-eq-mr" title="Permalink to this equation">¶</a></span>\[
-\sigma^2(I) = i_{\rm{o}} I - \frac{I^2}{N}
+<span class="eqno">(4)<a class="headerlink" href="#equation-eq-mr" title="Permalink to this equation">¶</a></span>\[
+\sigma^2(I) = i_{\rm{o}} I - \frac{I^2}{N}.
 \]</div>
-<p>we need to find a way to change <span class="math notranslate nohighlight">\(I\)</span> without changing <span class="math notranslate nohighlight">\(N\)</span> or <span class="math notranslate nohighlight">\(i_{\rm{o}}\)</span>. Changing <span class="math notranslate nohighlight">\(N\)</span> is not very likely because it is a parameter of the cell. However, there is the phaenomena of ‘channel run-down’, meaning that channels deactivate during the time course of an experiment.</p>
+<p>We need to find a way to change <span class="math notranslate nohighlight">\(I\)</span> without changing <span class="math notranslate nohighlight">\(N\)</span> or <span class="math notranslate nohighlight">\(i_{\rm{o}}\)</span>. Changing <span class="math notranslate nohighlight">\(N\)</span> is not very likely because it is a parameter of the cell.</p>
 <p>For voltage-gated channels, we know that</p>
 <div class="math notranslate nohighlight">
 \[
@@ -261,7 +282,7 @@ I = I(V),
 \[
 i_{\rm{o}} = \gamma (V-V_{\rm{rest}})
 \]</div>
-<p>and therefore we cannot just gradually change <span class="math notranslate nohighlight">\(V\)</span> and obtain a parabola from equation <a class="reference internal" href="#equation-eq-mr">(3)</a> .</p>
+<p>and, therefore, we cannot just gradually change <span class="math notranslate nohighlight">\(V\)</span> and obtain a parabola from equation <a class="reference internal" href="#equation-eq-mr">(4)</a> .</p>
 <p>The solution is to realize that <span class="math notranslate nohighlight">\(\Po\)</span> is a function of time</p>
 <div class="math notranslate nohighlight">
 \[
@@ -271,7 +292,7 @@ I = N \mean{i} = N i_{\rm{o}}(V) \Po(V,t)
 <div class="figure align-default" id="bol">
 <a class="reference internal image-reference" href="../_images/step.png"><img alt="../_images/step.png" src="../_images/step.png" style="height: 200px;" /></a>
 </div>
-<p>With this reasoning we can determine a mean current and the variance from many repetitive experiments, in which we apply a step in the membrane voltage</p>
+<p>With this reasoning, we can determine a mean current and the variance from many repetitive experiments, in which we apply a step in the membrane voltage</p>
 <div class="figure align-default" id="id1">
 <a class="reference internal image-reference" href="../_images/Isigma.png"><img alt="../_images/Isigma.png" src="../_images/Isigma.png" style="height: 200px;" /></a>
 </div>

@@ -1,12 +1,12 @@
 # Random Variables
 
-We cannot predict the value of a random variable in the futur from the infromation that we have at the present. This is in contrast to a deterministic variable.
+We cannot predict the value of a random variable in the future from the information that we have at the present.
 
-However, we can make probabilistic statements about the futur.
+However, we can make probabilistic statements about the future.
 
 Example coin flipping:
 
-What is the probability P(H) to flip heads?
+What is the probability $P(H)$ to flip heads?
 
 $$
 P(H) = \frac{\mbox{number of heads}}{\mbox{number of all flips}}
@@ -31,7 +31,7 @@ P(T) = 1-P(H)
 $$
 
 
-Let's consider two independent events: two coins. What is the probability to flip both coins to heads
+Let's consider two independent events: two coins. What is the probability of flipping both coins to heads
 
 $$
 P(H \mbox{ and } H) = P(H)P(H)
@@ -43,12 +43,12 @@ $$
 P(H) = \frac{\mbox{number of heads}}{\mbox{number of all flips}}.
 $$
 
-Is there a difference between tossing 100 coins at the same time and evaluate how many disply heads, and flipping one coin a 100 times?
+Is there a difference between tossing 100 coins at the same time and evaluate how many display heads, and flipping one coin a 100 times?
 
 
 ### The mean value
 
-If we cannot predict the futur value of a random variable, maybe we can say something about the expected mean?
+If we cannot predict the future value of a random variable, maybe we can say something about the expected mean?
 
 Let's consider a fair die. What is the probability to toss a $1$?
 
@@ -84,11 +84,16 @@ $$
 \mean{x} = \sum_{i=2}^5 i * \frac{1}{4} = 3.5
 $$
 
-Is there a way to distingues the two systems?
+Is there a way to distinguish the two systems?
 
 ### The variance
 
-IMAGE
+```{figure} width.png
+---
+height: 170px
+name: width
+---
+```
 
 The variance is the mean squared distance from the mean:
 
@@ -102,7 +107,7 @@ $$
 \sigma^2 = \sum_i^6 i^2 \frac{1}{6} - 3.5^2 = 2.9
 $$
 
-and for the 4 faces die, we obtain
+and for the 4-faces die, we obtain
 
 $$
 \sigma^2 = \sum_{i=2}^5 i^2 \frac{1}{4} - 3.5^2 = 1.25
@@ -111,17 +116,22 @@ $$
 
 ### Continuous random variable
 
-A continuous random variable can have infinitely many values. Let's describe the random variable with $X$ and it's value with $x$. Counting is not that stright forward compared to a discrete random number. Therefore, we need to introduce the concept of a probability density function $p(X)$. Now, we can define the probability of $X$ taking a value between $x$ and $x+dx$:
+A continuous random variable can have infinitely many values. Let's describe the random variable with $X$ and its value with $x$. Counting is not that straightforward compared to a discrete random number. Therefore, we need to introduce the concept of a probability density function $p(X)$. Now, we can define the probability of $X$ taking a value between $x$ and $x+dx$:
 
 $$
 P(x \le X \le x + dx) = p(x)dx
 $$
 
-Let's consider $M$ identical system that have the random variable $X$ as an output, which can have values between $1$ and $10$. If $M$ is large I have a long list of $M$ different values between $1$ and $10$. To determine the probability density function, I construct a histogram and count how many systems' output are in each box with bin width $dx$.  
+Let's consider $M$ identical systems that have the random variable $X$ as an output, which can have values between $0$ and $10$. Now, I have a list of $M$ different values between $0$ and $10$. To determine the probability density function, I construct a histogram and count how many systems' outputs fall into each box with bin width $dx$.  
 
+```{figure} histo.png
+---
+height: 350px
+name: histo
+---
+```
 
-
-Formaly, the probability density function is then given by
+Formally, the probability density function is then given by
 
 $$
 p(x) = \lim_{M \to \infty, dx \to 0} \frac{\mbox{number of systems with } x \le X \le x + dx}{M dx}
