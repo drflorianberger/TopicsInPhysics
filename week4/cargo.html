@@ -1,0 +1,473 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cargo Transport by Multiple Motors &#8212; Stochastic Physics of the Molecules of Life</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"koc": "k_{\\rm{oc}}", "kco": "k_{\\rm{co}}", "Po": "P_{\\rm{o}}", "Pc": "P_{\\rm{c}}", "mean": ["\\langle #1 \\rangle", 1], "Fs": "F_{\\rm{s}}", "Fd": "F_{\\rm{d}}", "del": "\\partial", "e": "\\epsilon"}}, "tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Cargo under Force" href="cargo_force.html" />
+    <link rel="prev" title="From Single Motors to Multiple Motors" href="s_to_m_motors.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Stochastic Physics of the Molecules of Life</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week1/week1.html">
+   Week 1: Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week1/ex_wk1.html">
+   Week 1: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week2/week2.html">
+   Week 2: Fluctuations of Ion Channels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week2/ex_wk2.html">
+   Week 2: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week2/paper.html">
+   Week 2: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week3/week3.html">
+   Week 3: Fluctuation of Molecular Motors
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week3/ex_wk3.html">
+   Week 3: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week3/paper.html">
+   Week 3: Paper
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="week4.html">
+   Week 4: Long-range transport of intracellular cargos
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="intra_transport.html">
+     Intracellular Transport
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="s_to_m_motors.html">
+     From Single Motors to Multiple Motors
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Cargo Transport by Multiple Motors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="cargo_force.html">
+     Cargo under Force
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="critic.html">
+     Critique of the Model
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="open.html">
+     Open Question
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ex_wk4.html">
+   Week 4: Exercises
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="paper.html">
+   Week 4: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week5/week5.html">
+   Week 5: Diffusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week5/paper.html">
+   Week 5: Paper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../videos.html">
+   Videos of Talks
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/week4/cargo.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cargo-transport-by-two-motors">
+   Cargo Transport by Two Motors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Cargo transport by multiple motors
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="cargo-transport-by-multiple-motors">
+<h1>Cargo Transport by Multiple Motors<a class="headerlink" href="#cargo-transport-by-multiple-motors" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="cargo-transport-by-two-motors">
+<h2>Cargo Transport by Two Motors<a class="headerlink" href="#cargo-transport-by-two-motors" title="Permalink to this headline">¶</a></h2>
+<p>Consider the case of a cargo transported by two motors</p>
+<div class="figure align-default" id="cargo2">
+<a class="reference internal image-reference" href="../_images/cargo2mot.png"><img alt="../_images/cargo2mot.png" src="../_images/cargo2mot.png" style="height: 100px;" /></a>
+</div>
+<p>We can formalize this behavior by assigning discrete states</p>
+<div class="figure align-default" id="cargo2state">
+<a class="reference internal image-reference" href="../_images/cargo2motstates.png"><img alt="../_images/cargo2motstates.png" src="../_images/cargo2motstates.png" style="height: 170px;" /></a>
+</div>
+<p>Next, we introduce rates between these states</p>
+<div class="figure align-default" id="cargo2staterates">
+<a class="reference internal image-reference" href="../_images/cargo2motstatesRates.png"><img alt="../_images/cargo2motstatesRates.png" src="../_images/cargo2motstatesRates.png" style="height: 170px;" /></a>
+</div>
+<p>How are these rates related to the single motor rates? For simplicity, we assume a load-free case, <span class="math notranslate nohighlight">\(F=0\)</span>. Because the motors are independent and identical, the rates add up. The effective rate for two unbound motors to bind is</p>
+<div class="math notranslate nohighlight" id="equation-eq-r1">
+<span class="eqno">(8)<a class="headerlink" href="#equation-eq-r1" title="Permalink to this equation">¶</a></span>\[
+\pi_{0} = 2\pi,
+\]</div>
+<p>and the rate for two bound motors to unbind is</p>
+<div class="math notranslate nohighlight" id="equation-eq-r2">
+<span class="eqno">(9)<a class="headerlink" href="#equation-eq-r2" title="Permalink to this equation">¶</a></span>\[
+\e_{2} = 2\e.
+\]</div>
+<p>The master equation reads:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{d}{dt} P_0 &amp;= -\pi_0 P_0 + \e_1 P_1\\ 
+\frac{d}{dt} P_1 &amp;= \pi_0 P_0 -(\e_1 + \pi_1) P_1 + \e_2 P_2\\
+\frac{d}{dt} P_2 &amp;= \pi_1 P_1 - \e_2 P_2
+\end{split}\]</div>
+<p>With the normalization <span class="math notranslate nohighlight">\(P_0 + P_1 + P_2 = 1\)</span>, we can solve for the steady state:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_0 &amp;= \frac{ \e_1 \e_2 }{A}\\
+P_1 &amp;= \frac{\pi_0 \e_2}{A}\\
+P_2 &amp;= \frac{\pi_0 \pi_1}{A}
+\end{split}\]</div>
+<p>with <span class="math notranslate nohighlight">\(A = \e_1 \e_2 + \pi_0 \e_2 + \pi_0 \pi_1 \)</span></p>
+<p>Using the definitions of the single-motor rates from equation <a class="reference internal" href="#equation-eq-r1">(8)</a> and <a class="reference internal" href="#equation-eq-r1">(8)</a>, we derive:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_0 &amp;= \frac{\e^2}{a}\\
+P_1 &amp;= \frac{2 \e \pi}{a}\\
+P_2 &amp;= \frac{\pi^2}{a}\\
+\end{split}\]</div>
+<p>with <span class="math notranslate nohighlight">\(a = (\e + \pi)^2 \)</span></p>
+<p>Does this make sense?</p>
+<p>What is the run length of a cargo transported by two motors? If the cargo is transported with velocity <span class="math notranslate nohighlight">\(v\)</span>, we only need to determine the average time <span class="math notranslate nohighlight">\(\mean{t}\)</span> the cargo is bound, to obtain the average run length <span class="math notranslate nohighlight">\(\mean{x} = v \mean{t}\)</span>.</p>
+<p>There are several methods to calculate <span class="math notranslate nohighlight">\(\mean{t}\)</span>. We can modify the graph such that it only accounts for the case when the motor is bound and promote the unbound state to an absorbing state</p>
+<div class="figure align-default" id="absorbing2mot">
+<a class="reference internal image-reference" href="../_images/absorbing2mot.png"><img alt="../_images/absorbing2mot.png" src="../_images/absorbing2mot.png" style="height: 70px;" /></a>
+</div>
+<p>Now we redirect the arrow going into the absorbing state to the starting state and close the network.</p>
+<div class="figure align-default" id="closed2mot">
+<a class="reference internal image-reference" href="../_images/closed2mot.png"><img alt="../_images/closed2mot.png" src="../_images/closed2mot.png" style="height: 70px;" /></a>
+</div>
+<p>The inverse probability current <span class="math notranslate nohighlight">\(J\)</span> to go along this pathway is the average time the motor is bound.</p>
+<div class="math notranslate nohighlight">
+\[
+J = \e S_1
+\]</div>
+<p><span class="math notranslate nohighlight">\(S_1\)</span> can be determined from the two-state system as</p>
+<div class="math notranslate nohighlight">
+\[
+S_1 = \frac{2\e}{ 2\e + \pi}
+\]</div>
+<p>Then we have:</p>
+<div class="math notranslate nohighlight">
+\[
+\mean{t} = J^{-1} = \frac{ 2\e + \pi}{2\e^2}
+\]</div>
+<p>An alternative way would be to consider the probability current out of the state, in which the cargo is bound to the filament and only by one motor.</p>
+<p>Here, we need to find the conditional probability that the motor is bound and that the motor is bound in state <span class="math notranslate nohighlight">\((1)\)</span>, which is given by</p>
+<div class="math notranslate nohighlight">
+\[
+S_1 = \frac{P_1}{1-P_0}
+\]</div>
+<p>Note that the term <span class="math notranslate nohighlight">\(1-P_0\)</span> is the probability of finding a motor bound. With this result we can define an effective unbinding rate:</p>
+<div class="math notranslate nohighlight">
+\[
+\e_{\rm{eff}} = \e S_1 = \e \frac{P_1}{1-P_0}
+\]</div>
+<p>leading to the same average binding time (exersice):</p>
+<div class="math notranslate nohighlight">
+\[
+\mean{t} = \e_{\rm{eff}}^{-1} = \frac{ 2\e + \pi}{2\e^2}
+\]</div>
+<p>Now, the run length of a cargo transported by two motors is given by</p>
+<div class="math notranslate nohighlight">
+\[
+\mean{x}_2 = v J^{-1} = v \frac{ 2\e + \pi}{2\e^2} = \frac{v}{\e} \left(1 + \frac{\pi}{2\e}\right) = \mean{x}_1 \left(1 + \frac{1}{2} w \right)
+\]</div>
+<div class="figure align-default" id="scale1">
+<a class="reference internal image-reference" href="../_images/scaling1.png"><img alt="../_images/scaling1.png" src="../_images/scaling1.png" style="height: 170px;" /></a>
+</div>
+<p>How does that scale with the number of motors?</p>
+</div>
+<div class="section" id="id1">
+<h2>Cargo transport by multiple motors<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Let’s consider the case of <span class="math notranslate nohighlight">\(N\)</span> identical motors transporting a common cargo.</p>
+<div class="figure align-default" id="multi">
+<a class="reference internal image-reference" href="../_images/multimotor.png"><img alt="../_images/multimotor.png" src="../_images/multimotor.png" style="height: 50px;" /></a>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{d}{dt} P_0 &amp;= -\pi_0 P_0 + \e_1 P_1\\ 
+\frac{d}{dt} P_1 &amp;= \pi_0 P_0 -(\e_1 + \pi_1) P_1 + \e_2 P_2\\
+\frac{d}{dt} P_2 &amp;= \pi_1 P_1 -(\e_2 + \pi_2) P_2 + \e_3 P_3\\
+...\\
+\frac{d}{dt} P_i &amp;= \pi_{i-1} P_{i-1} -(\e_i + \pi_i) P_i + \e_{i+1} P_{i+1}\\
+...\\
+\frac{d}{dt} P_N &amp;= \pi_{N-1} P_{N-1} -\e_N P_N
+\end{split}\]</div>
+<p>The solution can be derived as</p>
+<div class="math notranslate nohighlight">
+\[
+P_n = P_0 \sum_{i=0}^{n-1} \frac{\pi_i}{\e_{i+1}}
+\]</div>
+<p>from the normalization <span class="math notranslate nohighlight">\(\sum P_n = 1\)</span>, we get</p>
+<div class="math notranslate nohighlight">
+\[
+P_0 = \left(1+ \sum_{n=0}^{N-1} \prod_{i=0}^{n} \frac{\pi_i}{\e_{i+1}} \right)^{-1}
+\]</div>
+<p>To calculate the run length we can use the same argument as in the case of transport by two motors and determine the conditional probability that the cargo is bound and only by one motor:</p>
+<div class="math notranslate nohighlight">
+\[
+S = \frac{P_1}{1-P_0}
+\]</div>
+<p>Using this result, we find the run length as</p>
+<div class="math notranslate nohighlight">
+\[
+\mean{x} = v\mean{t} = v \e_{\rm{eff}}^{-1} = v \e S = \frac{v}{N\pi} \left( (1+\frac{\pi}{\e})^N - 1\right)
+\]</div>
+<p>Exponential increase with <span class="math notranslate nohighlight">\(N\)</span></p>
+<p>Some numbers: <span class="math notranslate nohighlight">\(v = 1 \mu m/s\)</span>, <span class="math notranslate nohighlight">\(\e=1/s\)</span>, <span class="math notranslate nohighlight">\(\pi=1/s\)</span>, <span class="math notranslate nohighlight">\(N=10\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\mean{x} = 0.1 \mu m (2^{10} -1) = 0.1 (1024 -1) \approx 100 \mu m
+\]</div>
+<div class="figure align-default" id="scaling2">
+<a class="reference internal image-reference" href="../_images/scaling2.png"><img alt="../_images/scaling2.png" src="../_images/scaling2.png" style="height: 170px;" /></a>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./week4"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="s_to_m_motors.html" title="previous page">From Single Motors to Multiple Motors</a>
+    <a class='right-next' id="next-link" href="cargo_force.html" title="next page">Cargo under Force</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Florian Berger<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    
+  </body>
+</html>
