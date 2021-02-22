@@ -1,15 +1,17 @@
 Week 2: Exercises
 =======================
  
-2.1) Current through a voltage-gated ion channel:
+2.1) **1 Point** Current through a voltage-gated ion channel:
 What is the shape of the steady-state current as a function of voltage? Hint: the shape is determined by the product of two functions. 
 <br />
 <br />
-2.2) Time-dependent solution of a two-state channel:
+
+2.2) **1 Point** Time-dependent solution of a two-state channel:
 What is the time-dependent open probability $\Po(t)$ of the simple two-state channel model given in equation {eq}`eq:2state` 
 <br />
 <br />
-2.3) A three-state channel: Consider the following state diagram for a channel with two closed states:
+
+2.3) **3 Points** A three-state channel: Consider the following state diagram for a channel with two closed states:
 
 ```{figure} 3states.png
 ---
