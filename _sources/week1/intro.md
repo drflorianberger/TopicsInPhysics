@@ -37,7 +37,7 @@ Key contributions:
 - Interdisciplinary acceptance
 - Specific new research areas: mechanobiology, membrane-less organelles, predictable evolution, from genes to embryos, limits on biological performance.
 
-### The Futur
+### The Future
 
 - Unifying theoretical principles of life?
 - Models in biology: 'accurate descriptions of our pathetic thinking'
