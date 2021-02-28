@@ -27,6 +27,7 @@ is normalized.
 1.4) **2 Points:** Suppose you have two identical dice with 6-faces with numbers 1 to 6. Tossing the dice together, what is the combined mean value and the combined variance? Can you guess a rule for the mean and the variance of a system of independent events?
 <br />
 <br />
+
 1.5) Write down the master equation for the following diagram:
 
 ```{figure} ex1.png
@@ -37,9 +38,11 @@ name: 2s
 ```
 <br />
 <br />
+
 1.6) Solve the master equation from 1.5 with the initial condition $P_0(0) = 1$
 <br />
 <br />
+
 1.7) You are waiting for the bus. The average waiting time is $\tau = 5$ minutes and the waiting times are distributed according to an exponential distribution with the density
 
 $$
