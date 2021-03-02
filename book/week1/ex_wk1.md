@@ -13,7 +13,7 @@ $$
 1.2) **1 Point:** Show that the probability density function
 
 $$
-p(x) = \frac{1}{s \sqrt{\pi}} e^{(x-m)^2/s^2}    
+p(x) = \frac{1}{s \sqrt{\pi}} e^{-(x-m)^2/s^2}    
 $$ (eq:gpdf)
 
 is normalized. 
