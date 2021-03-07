@@ -47,7 +47,7 @@ name: bol
 ---
 ```
 
-In experiments, the voltage is changed instantaneously with a step. We expect from EQ that there is a transient behavior of the open probability and, therefore, it depends on time and voltage:
+In experiments, the voltage is changed instantaneously with a step. We expect from {eq}`eq:2state` that there is a transient behavior of the open probability and, therefore, it depends on time and voltage:
 
 $$
 \Po = \Po(V,t).
