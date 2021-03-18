@@ -229,32 +229,33 @@
                 
   <div class="section" id="week-3-exercises">
 <h1>Week 3: Exercises<a class="headerlink" href="#week-3-exercises" title="Permalink to this headline">¶</a></h1>
-<p>3.1) <strong>2 Points:</strong> Show that the solution</p>
-<div class="math notranslate nohighlight" id="equation-eq-solution">
-<span class="eqno">(6)<a class="headerlink" href="#equation-eq-solution" title="Permalink to this equation">¶</a></span>\[
-P_j(t) = \frac{(k t)^j}{j!} e^{-kt}
-\]</div>
-<p>for the Poisson stepper is a solution for the following master equation</p>
-<div class="math notranslate nohighlight" id="equation-eq-states">
-<span class="eqno">(7)<a class="headerlink" href="#equation-eq-states" title="Permalink to this equation">¶</a></span>\[\begin{split}
-\frac{d}{dt} P_0 (t) &amp;= - k P_0 (t) \\
-\frac{d}{dt} P_j (t) &amp;= k P_{j-1} - k P_{j}  \quad \text{for } j&gt;0\\
-\end{split}\]</div>
-<p>Show that the solution <a class="reference internal" href="#equation-eq-solution">(6)</a> is normalized.
-<br />
-<br /></p>
-<p>3.2) <strong>1 Point:</strong> Use Taylor’s theorem to show that</p>
-<div class="math notranslate nohighlight">
-\[
+<p>3.1) <strong>1 Point:</strong> Use Taylor’s theorem to show that</p>
+<div class="math notranslate nohighlight" id="equation-eq-exp">
+<span class="eqno">(8)<a class="headerlink" href="#equation-eq-exp" title="Permalink to this equation">¶</a></span>\[
 e^{kt} = \sum_{n=0}^{\infty}  \frac{(k t)^{n}}{n!}
 \]</div>
 <br />
 <br />
+<p>3.2) <strong>2 Points:</strong> Show that the solution</p>
+<div class="math notranslate nohighlight" id="equation-eq-solution">
+<span class="eqno">(9)<a class="headerlink" href="#equation-eq-solution" title="Permalink to this equation">¶</a></span>\[
+P_j(t) = \frac{(k t)^j}{j!} e^{-kt}
+\]</div>
+<p>for the Poisson stepper is a solution for the following master equation</p>
+<div class="math notranslate nohighlight" id="equation-eq-states">
+<span class="eqno">(10)<a class="headerlink" href="#equation-eq-states" title="Permalink to this equation">¶</a></span>\[\begin{split}
+\frac{d}{dt} P_0 (t) &amp;= - k P_0 (t) \\
+\frac{d}{dt} P_j (t) &amp;= k P_{j-1} - k P_{j}  \quad \text{for } j&gt;0\\
+\end{split}\]</div>
+<p>Show that the solution <a class="reference internal" href="#equation-eq-solution">(9)</a> is normalized, i.e. <span class="math notranslate nohighlight">\(\sum_j P_j(t) = 1\)</span> (Hint use equation <a class="reference internal" href="#equation-eq-exp">(8)</a>)
+<br />
+<br /></p>
 <p>3.3) <strong>2 Points</strong> Derive the variance <span class="math notranslate nohighlight">\(\mean{(x-\mean{x})^2}\)</span> for a poisson stepper with step size <span class="math notranslate nohighlight">\(d\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[
 x(t) = d N(t)
 \]</div>
+<p>(Hint: most of the calculation and the tricks have been introduced in equations <a class="reference internal" href="stepper.html#equation-eq-trick">(6)</a> and <a class="reference internal" href="stepper.html#equation-eq-step">(7)</a>)</p>
 <br />
 <br />
 <p>3.4) Consider a Markov process on the following network:</p>
@@ -264,7 +265,7 @@ x(t) = d N(t)
 <p>The process starts in state <span class="math notranslate nohighlight">\((0)\)</span>. The distribution of arrival times into the absorbing state <span class="math notranslate nohighlight">\((2)\)</span> is given by</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{d}{dt}P_2(t)$
+\frac{d}{dt}P_2(t)
 \]</div>
 <p>Show that this distribution of arrival times is not a simple exponential function.</p>
 </div>
