@@ -11,7 +11,7 @@ We will discuss the following questions:
 
 1) Does the title and the abstract reflect the content of the paper?
 
-2) How does equation (1) and (2) scale with time?
+2) How do equation (1) and (2) scale with time?
 
 3) What is shown in Fig. 1 ?
 
