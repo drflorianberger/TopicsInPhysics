@@ -52,13 +52,13 @@ $$
 d \mean{N(t)} &= d \sum_{j=0}^{\infty} j P_j(t) = d \sum_{j=0}^{\infty} j \frac{(k t)^j}{j!} e^{-kt}
 = d(0 + \sum_{j=1}^{\infty} j \frac{(k t)^j}{j!} e^{-kt})\\ &= d kt \sum_{j=1}^{\infty}  \frac{(k t)^{j-1}}{(j-1)!} e^{-kt}
 \underset{n:= j-1}{=} d kt \underbrace{\sum_{n=0}^{\infty}  \frac{(k t)^{n}}{n!}}_{e^{kt}} e^{-kt} = dkt
-$$
+$$ (eq:trick)
 
 The variance of the position can be calculated (exersice):
 
 $$
 \mean{(x-\mean{x})^2} = \mean{d^2 N^2} - \mean{d N}^2 = d^2 \underbrace{\mean{N^2}}_{kt + (kt)^2} - (dkt)^2 = d^2 kt
-$$
+$$ (eq:step)
 
 Now we can make a very strong prediction from the model about the so-called randomness.
 

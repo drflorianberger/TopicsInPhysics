@@ -292,15 +292,15 @@ x(t) = d N(t),
 \[
 \mean{x(t)} = \mean{d N(t)} = d \mean{N(t)}
 \]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-eq-trick">
+<span class="eqno">(6)<a class="headerlink" href="#equation-eq-trick" title="Permalink to this equation">¶</a></span>\[\begin{split}
 d \mean{N(t)} &amp;= d \sum_{j=0}^{\infty} j P_j(t) = d \sum_{j=0}^{\infty} j \frac{(k t)^j}{j!} e^{-kt}
 = d(0 + \sum_{j=1}^{\infty} j \frac{(k t)^j}{j!} e^{-kt})\\ &amp;= d kt \sum_{j=1}^{\infty}  \frac{(k t)^{j-1}}{(j-1)!} e^{-kt}
 \underset{n:= j-1}{=} d kt \underbrace{\sum_{n=0}^{\infty}  \frac{(k t)^{n}}{n!}}_{e^{kt}} e^{-kt} = dkt
 \end{split}\]</div>
 <p>The variance of the position can be calculated (exersice):</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-eq-step">
+<span class="eqno">(7)<a class="headerlink" href="#equation-eq-step" title="Permalink to this equation">¶</a></span>\[
 \mean{(x-\mean{x})^2} = \mean{d^2 N^2} - \mean{d N}^2 = d^2 \underbrace{\mean{N^2}}_{kt + (kt)^2} - (dkt)^2 = d^2 kt
 \]</div>
 <p>Now we can make a very strong prediction from the model about the so-called randomness.</p>
