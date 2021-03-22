@@ -33,6 +33,8 @@ Show that the solution {eq}`eq:solution` is normalized, i.e. $\sum_j P_j(t) = 1$
 $$
 x(t) = d N(t)
 $$
+
+
 (Hint: most of the calculation and the tricks have been introduced in equations {eq}`eq:trick` and {eq}`eq:step`)  
 
 <br />
