@@ -13,7 +13,7 @@ We will discuss the following questions:
 
 1) Does the title and the abstract reflect the content of the paper?
 
-2) What is illustrated in Fig.1 ?
+2) What is illustrated in Fig.1?
 
 3) Which equation represents the master equation for the system?
 

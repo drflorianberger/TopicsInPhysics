@@ -16,10 +16,12 @@ name: cargo2staterates
 
 4.2) **1 Point:** Calculate the average time that the cargo is bound to the filament
 
-4.3) **1 Point:** Calculate the average velocity of the cargo.
+4.3) **1 Point:** Calculate the average run length of the cargo, assuming that the velocity of the cargo in state (1) and (2) are the same.
 
 <br />
 <br />
+<br />
+
 We assume that the motors are identical and the single-motor force-velocity relation is given by
 
 $$
